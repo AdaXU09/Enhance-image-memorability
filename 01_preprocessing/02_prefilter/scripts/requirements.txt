@@ -1,0 +1,19 @@
+# Requirements for prefilter.py
+#
+# Tested with Python 3.11 and the versions pinned below.
+#
+#     pip install -r requirements.txt
+#
+# resmem brings in torch and torchvision, which are large (about 2 GB).
+# Without it prefilter.py still runs, but pool.csv has no memory_score
+# column, and adding that later needs a full re-measure rather than --reuse.
+
+# --- required -------------------------------------------------------------
+opencv-python>=4.13.0.92
+numpy>=2.4.4
+Pillow>=12.2.0
+
+# --- optional: predicted memorability -------------------------------------
+resmem>=1.1.6
+
+# pulled in by resmem: torch 2.14.0, torchvision 0.29.0

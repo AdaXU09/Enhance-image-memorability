@@ -1,0 +1,46 @@
+prefilter.py  2026-10-09 11:33
+command: prefilter.py ../food_photos --out-dir pool --out-csv pool.csv --target 1000 --auto
+
+files found                   108,152
+  stage A, too small                47,801
+  stage A, unreadable                  105
+usable size                    60,246
+  not sampled                    58,896
+measured                        1,350
+  stage B, duplicate                   110
+  stage B, clipped                     107
+  stage B, blurred                      62
+  stage B, interior_seam                 8
+  stage B, uniform_border|interior_seam        4
+  stage B, uniform_border                1
+passed                          1,058
+  over --target 1,000              58
+kept                            1,000
+
+thresholds
+  min_sharpness      111.8        bottom 5% of your photos
+  max_clipped        0.1          fixed: >10% of pixels blown or crushed
+  min_saturation     10.0         fixed: true greyscale only (0-255 scale)
+  drop_flagged       1            --auto
+
+--------------------------------------------------------------------
+
+prefilter.py  2026-10-09 11:33
+command: prefilter.py ../food_photos --out-dir pool --out-csv pool.csv --target 1000 --auto --reuse --min-sharpness 45
+
+reused measurements             1,350
+  stage B, clipped                     111
+  stage B, duplicate                   110
+  stage B, interior_seam                 9
+  stage B, blurred                       7
+  stage B, uniform_border|interior_seam        4
+  stage B, uniform_border                1
+passed                          1,108
+  over --target 1,000             108
+kept                            1,000
+
+thresholds
+  min_sharpness      45.0         you set this
+  max_clipped        0.1          fixed: >10% of pixels blown or crushed
+  min_saturation     10.0         fixed: true greyscale only (0-255 scale)
+  drop_flagged       1            --auto

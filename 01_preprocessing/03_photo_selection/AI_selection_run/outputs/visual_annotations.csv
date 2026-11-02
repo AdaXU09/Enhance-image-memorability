@@ -1,0 +1,998 @@
+﻿index,category,n_dishes,width_frac,height_frac,complexity,angle,brightness,flags,bbox_note,description
+1,noodle,1,100,100,medium,angled,bright,,,Noodles with vegetables and toast on a white plate
+2,dessert,2,80,80,medium,angled,bright,pt,,Ice cream in a waffle bowl with a branded jar behind it
+3,grill,1,100,90,complex,angled,medium,t,cropped at edge,Mixed grilled meats and falafel on a large platter
+4,burger,1,100,60,simple,side,bright,,cropped at edge,Sandwich halves on a wooden board
+5,dessert,1,100,100,simple,angled,bright,,cropped at edge,Powdered pastries on a plate
+6,burger,2,100,90,medium,angled,medium,t,cropped at edge,Grilled cheese sandwiches and soup on a branded tray liner
+7,dessert,1,100,90,simple,angled,medium,,cropped at edge,Chocolate cake on a square white plate
+8,fried,3plus,90,40,complex,side,dark,p,,Fried seafood on a rectangular platter with drinks behind it
+9,dessert,1,90,70,complex,angled,bright,t,,Popcorn dessert with branded packaging and a figurine
+10,other,2,80,60,medium,angled,medium,,,Roasted cauliflower with a glass of wine
+11,fried,1,80,60,complex,angled,bright,ptq,no food container visible,A falafel held in front of a food stand
+12,salad,1,100,80,medium,angled,bright,,cropped at edge,Vegetables and garnish on a white square plate
+13,grill,3plus,100,80,complex,angled,dark,,cropped at edge,Grilled meat with side vegetables and two drinks
+14,pizza,1,100,100,medium,top,medium,,cropped at edge,Round pizza on a wooden paddle
+15,grill,1,90,70,medium,angled,bright,,,Sliced beef over vegetables in a black bowl
+16,other,1,100,100,complex,top,medium,,cropped at edge,Stir-fried meat and green peppers filling the frame
+17,salad,3plus,60,40,complex,angled,medium,p,main dish ambiguous,A person serving food at a buffet
+18,dessert,2,100,70,simple,top,bright,,cropped at edge,Cake slices on a white plate beside an orange drink
+19,burger,1,90,90,complex,side,medium,t,,Tall burger with fried garnish on branded paper
+20,fried,1,80,70,medium,side,bright,,,Loaded waffle fries on a white plate
+21,pizza,1,90,90,simple,top,medium,,,Cheese pizza slice on a paper plate
+22,noodle,1,100,100,complex,top,bright,,cropped at edge,Pasta with meat and herbs in a white bowl
+23,burger,1,100,80,medium,angled,medium,t,cropped at edge,A filled wrap on a blue patterned plate
+24,salad,1,80,100,complex,top,bright,,,Salad in a round black bowl
+25,salad,3plus,100,50,complex,angled,bright,,cropped at edge,Several salad bowls and a caprese plate on a table
+26,fried,2,50,90,medium,angled,medium,,cropped at edge,Fried croquettes on a narrow black platter
+27,burger,3plus,80,70,medium,angled,bright,,cropped at edge,Sandwiches with a cup of dipping sauce
+28,grill,1,100,90,complex,angled,medium,,cropped at edge,Grilled meat and skewers on a barbecue rack
+29,pizza,1,100,70,complex,side,medium,p,cropped at edge,Pizza on a large platter in front of seated diners
+30,pizza,3plus,70,30,complex,angled,medium,pt,main dish ambiguous,Pizza slices displayed behind a counter
+31,burger,2,100,100,complex,angled,bright,,cropped at edge,Tacos and a central bowl of sauce on a white plate
+32,grill,1,100,100,medium,angled,medium,,cropped at edge,Seared meat with vegetables and cream sauce
+33,fried,3plus,100,60,complex,angled,dark,t,cropped at edge,Fried snacks in a basket with drinks and a menu
+34,other,3plus,40,20,complex,angled,medium,pt,main dish ambiguous,Diners at a table with several small dishes
+35,burger,3plus,100,80,medium,angled,bright,t,cropped at edge,Steak sandwich and chips with sauce and a branded drink
+36,dessert,1,80,90,simple,side,medium,,,Biscuits stacked on a red cake stand
+37,dessert,2,70,80,medium,angled,bright,,cropped at edge,Funnel cake and powdered pastries on separate plates
+38,rice,1,100,100,complex,top,bright,,cropped at edge,Sushi rolls and garnish on a blue plate
+39,burger,1,90,100,medium,top,medium,,,Open toast with cheese and radish on a black plate
+40,soup,2,60,90,medium,angled,medium,,,Vegetable curry in a bowl on a saucer with a side bowl
+41,burger,1,100,80,medium,angled,medium,,cropped at edge,Filled wrap halves and salad on a white plate
+42,grill,2,70,70,complex,angled,medium,,cropped at edge,Sliced meat with asparagus and red sauce beside wine
+43,rice,1,100,80,medium,side,bright,,cropped at edge,Sushi rolls arranged on a rectangular plate
+44,other,1,100,100,complex,angled,medium,,cropped at edge,Baked oysters and bread on a paper-lined tray
+45,dessert,1,100,70,simple,angled,bright,,cropped at edge,A dessert slice and sauce on a rectangular white plate
+46,other,1,100,100,medium,angled,bright,,cropped at edge,An omelette with cheese and tomato sauce
+47,grill,1,100,100,complex,angled,bright,,cropped at edge,Seared meat with mixed vegetables on a white plate
+48,salad,2,50,80,medium,top,medium,,,Salad on a plate with a small dressing cup on a wooden table
+49,fried,1,100,100,complex,angled,bright,,cropped at edge,Tortilla chips topped with chicken cheese and vegetables
+50,other,1,100,100,medium,angled,medium,t,cropped at edge,Cheese grapes and nuts on a signed serving board
+51,dessert,2,40,40,complex,angled,medium,p,,Two people holding plates of pastries
+52,noodle,1,100,100,medium,top,bright,,cropped at edge,Cheese-covered filled pasta with tomato sauce
+53,other,3plus,100,90,complex,side,bright,,cropped at edge,Fried eggs over vegetables with fruit and juice behind
+54,dessert,2,100,90,medium,top,medium,,,Pancakes eggs and bacon on a breakfast plate
+55,fried,2,100,90,medium,angled,medium,t,cropped at edge,Fried strips with lemon and a bowl of red sauce
+56,salad,3plus,100,90,complex,angled,medium,,,Lettuce and minced meat with two topping cups
+57,dessert,1,100,100,simple,top,bright,,cropped at edge,A small lemon meringue tart on a large white plate
+58,dessert,3plus,90,40,complex,angled,bright,pt,cropped at edge,Breakfast dishes and branded drinks with a visible hand
+59,dessert,1,90,100,medium,angled,medium,,cropped at edge,Assorted sweet buns in a foil basket
+60,drink,1,70,80,simple,top,bright,t,,An iced red drink with mint on a printed menu
+61,dessert,3plus,40,70,complex,angled,dark,p,,A tiered cake on a restaurant table with a diner
+62,pizza,3plus,70,60,complex,angled,medium,,cropped at edge,Several pizzas and a plastic cup of orange drink
+63,fried,2,100,70,medium,angled,bright,,cropped at edge,Fried seafood and fries with a cup of corn
+64,grill,1,100,100,medium,angled,bright,,cropped at edge,Fish and vegetables on a white plate
+65,burger,2,100,100,medium,side,medium,p,no food container visible,A fried seafood sandwich held above a plate of fries
+66,dessert,3plus,30,20,complex,angled,dark,t,main dish ambiguous,Cakes in a display case with printed price cards
+67,noodle,1,90,100,medium,angled,dark,,cropped at edge,Ramen with pork egg and seaweed in a bowl
+68,dessert,3plus,100,80,complex,angled,bright,t,cropped at edge,French toast with fruit syrup and other breakfast dishes
+69,rice,1,100,90,complex,angled,medium,,,Rice with meat mushrooms and vegetables in a black bowl
+70,noodle,1,100,100,medium,angled,bright,,cropped at edge,Pasta with cheese tomato sauce and garlic bread
+71,salad,1,100,100,complex,angled,medium,p,cropped at edge,Salad topped with fried fish and creamy dressing
+72,salad,1,70,60,complex,angled,bright,p,,Salad and sliced chicken on a patio table
+73,rice,3plus,100,60,complex,angled,dark,ptq,cropped at edge,Rice and several dishes under deep red restaurant lighting
+74,pizza,1,100,100,medium,angled,medium,,cropped at edge,Pizza with tomatoes and white cheese
+75,rice,1,90,90,medium,angled,dark,,,Rice with glazed meat and shredded vegetables in a black bowl
+76,grill,3plus,40,50,complex,top,medium,,main dish ambiguous,A spread of meat vegetables bread and bowls on a table
+77,dessert,3plus,60,70,medium,side,bright,,,Stacks of cookies on several cake stands
+78,fried,3plus,70,60,complex,angled,dark,,,Fries cheese dip and a salad bowl on a restaurant table
+79,burger,2,100,70,medium,side,bright,t,cropped at edge,Sandwich on a black plate with a branded cup behind
+80,dessert,1,100,100,medium,top,dark,t,cropped at edge,Cupcakes in a branded presentation box
+81,burger,2,100,90,medium,angled,medium,,cropped at edge,Small seafood sandwiches and fries on a rack with sauce
+82,salad,3plus,100,90,complex,angled,bright,p,cropped at edge,Lettuce wedges and other dishes with diners behind
+83,other,2,90,50,medium,angled,medium,,,Flatbread and a skillet of baked cheese dip on a board
+84,other,2,100,80,medium,angled,medium,pq,cropped at edge,A shell held above an open takeaway container
+85,burger,1,100,90,medium,angled,medium,,cropped at edge,Filled bread spirals in a cardboard box
+86,fried,2,100,100,simple,top,medium,,,A fried stuffed snack and red dipping sauce on a plate
+87,other,3plus,100,100,complex,angled,medium,,cropped at edge,Loaded baked potato and two small condiment cups
+88,grill,3plus,50,20,complex,angled,dark,pt,,Grilled skewers chips salsa and branded bottles by a fire
+89,grill,3plus,100,100,medium,top,medium,,cropped at edge,Grilled whole fish and flatbread with two sauce cups
+90,fried,2,100,100,medium,angled,medium,,cropped at edge,Fried strips with a cup of creamy sauce
+91,grill,1,70,80,complex,angled,medium,,,Meat and vegetables arranged in a stone serving vessel
+92,fried,2,100,90,medium,angled,medium,t,cropped at edge,Fried nuggets with mustard and a labeled container behind
+93,grill,1,90,40,simple,side,dark,,,Steak potato and green beans on a white plate
+94,burger,3plus,100,90,complex,angled,bright,,cropped at edge,Burger and fries on a plate with other dishes behind
+95,burger,3plus,80,60,complex,top,bright,t,main dish ambiguous,Wraps chips and fried snacks with branded wrappers
+96,pizza,1,100,50,simple,angled,bright,,,Rectangular pizza on a gingham-covered table
+97,burger,1,90,60,medium,angled,bright,t,,Taco on a board with branded paper and sauce packets
+98,soup,3plus,90,100,complex,top,medium,,cropped at edge,Seafood stew and long toast in a white bowl beside drinks
+99,fried,1,80,100,simple,angled,medium,,no food container visible,A sauced fried chicken piece lifted on a fork
+100,burger,1,100,100,simple,side,medium,t,cropped at edge,A large burger with a watermark along the bottom
+101,burger,1,70,50,simple,side,bright,t,,Fried chicken burger on branded paper
+102,burger,1,100,100,medium,angled,medium,,cropped at edge,Small fried chicken burgers on a metal tray
+103,other,3plus,100,60,complex,angled,medium,,,Lobster and two fish dishes on separate plates
+104,burger,3plus,100,100,complex,angled,medium,,cropped at edge,Sandwich halves onion rings and dipping bowls
+105,fried,1,100,100,medium,angled,medium,,cropped at edge,Fish cakes mashed potatoes and greens on a white plate
+106,dessert,1,80,50,simple,angled,medium,,,Tiramisu and a strawberry on a small plate
+107,burger,3plus,60,50,complex,angled,medium,pt,cropped at edge,Burger macaroni and drinks with a diner behind
+108,fried,2,100,90,complex,angled,medium,,cropped at edge,Loaded fried potatoes in a paper-lined basket
+109,rice,3plus,100,90,medium,angled,bright,t,cropped at edge,Sushi rolls with sauces cups and a printed utensil packet
+110,grill,3plus,90,60,complex,angled,medium,,cropped at edge,Steak and green beans with side dishes and wine
+111,burger,2,100,80,medium,angled,medium,,cropped at edge,Filled wrap on a wooden board beside a drink
+112,salad,2,100,100,complex,angled,bright,,cropped at edge,Grilled salmon over a leafy salad with a bread roll
+113,dessert,3plus,100,50,medium,top,medium,c,cropped at edge,A collage of several baked pastries
+114,noodle,3plus,100,60,complex,side,medium,p,cropped at edge,Pasta with mushrooms on a plate in front of diners
+115,rice,1,100,100,medium,top,medium,t,,Rice chicken and salad with a large text overlay
+116,pizza,1,100,100,medium,angled,medium,,cropped at edge,Large pizza with herbs on a wooden board
+117,burger,3plus,60,40,complex,angled,medium,pt,,Several small dishes and toast with a diner behind
+118,grill,1,90,80,simple,top,medium,,,Cooked shrimp in a white bowl
+119,grill,2,100,100,complex,angled,medium,,cropped at edge,Sauced shrimp and vegetables on a square plate
+120,grill,3plus,80,80,complex,angled,medium,,cropped at edge,Several skewers on bread with small side bowls
+121,other,3plus,100,80,complex,angled,medium,pt,cropped at edge,Breakfast in a divided black tray with ketchup and an arm
+122,fried,2,70,60,medium,top,bright,t,cropped at edge,Chips and cheese dip beside a phone showing printed text
+123,rice,3plus,100,50,complex,side,bright,t,cropped at edge,Rice bowl chips and a drink with branded packaging
+124,rice,1,70,80,simple,top,medium,t,,Fried rice on a plate beside branded chopstick paper
+125,pizza,1,100,100,medium,top,medium,,,Pepperoni pizza with a ring of stuffed crust pieces
+126,pizza,1,100,100,medium,angled,dark,,cropped at edge,Pizza with olives in an open cardboard box
+127,grill,1,100,90,medium,side,bright,,cropped at edge,Seared fish with garnish on a white plate
+128,dessert,1,50,60,simple,side,bright,p,no food container visible,A partially eaten pastry held in a hand
+129,drink,3plus,20,30,complex,top,bright,,main dish ambiguous,Two smoothies surrounded by fruit and vegetables
+130,burger,3plus,100,40,complex,angled,bright,t,cropped at edge,Quesadilla and takeaway food with branded drinks and wrappers
+131,rice,3plus,60,40,complex,angled,bright,t,cropped at edge,Rice bowl tacos chips and several sauces with branded packaging
+132,grill,1,100,100,medium,angled,medium,t,cropped at edge,Skewer with rice and salad on a watermarked photograph
+133,burger,2,100,60,medium,side,medium,p,,Several sliders on platters with a person behind
+134,grill,2,90,100,medium,top,medium,,cropped at edge,Steak fries and a sauce cup on a rectangular metal tray
+135,salad,2,70,50,complex,angled,bright,,,Steak salad on a plate beside iced tea
+136,grill,1,90,90,medium,top,medium,,cropped at edge,Seared scallops and greens in a shallow white bowl
+137,dessert,1,100,80,simple,side,medium,,cropped at edge,Ice cream over a baked dessert on a white plate
+138,other,3plus,40,30,complex,angled,medium,t,main dish ambiguous,An advertisement showing a spread of dishes and large text
+139,burger,2,80,70,medium,angled,medium,t,,Filled wrap on a wooden board with a sauce bowl
+140,fried,3plus,100,90,medium,angled,medium,,cropped at edge,Fried turnovers and dips in a red basket
+141,rice,1,100,100,complex,angled,bright,t,cropped at edge,Rice and mixed meats on a plate with printed branding
+142,burger,1,70,80,simple,side,medium,,,Egg bacon and cheese biscuit on a red stand
+143,burger,1,100,90,medium,side,medium,,cropped at edge,Burger and fries on checkered paper
+144,burger,3plus,100,80,medium,side,dark,t,,Burger fries and sauce with a text caption
+145,drink,1,40,80,medium,side,bright,,,Green milkshake topped with sweets in a clear cup
+146,dessert,1,90,30,simple,side,bright,p,,A hand holding a box of colorful macarons
+147,burger,1,100,100,simple,side,bright,,cropped at edge,Seafood on small toast slices on a white plate
+148,grill,1,100,100,simple,angled,medium,,cropped at edge,Sliced roast poultry on a white plate
+149,dessert,1,100,100,medium,angled,bright,t,cropped at edge,Banana split with cream cherries and text overlays
+150,fried,3plus,80,40,medium,side,bright,pt,,Fried snacks lifted by tongs with branded packaging behind
+151,fried,2,100,80,medium,angled,medium,,cropped at edge,Fried chicken broccoli and mash with a small sauce bowl
+152,other,2,100,90,complex,angled,dark,p,cropped at edge,Crab legs and shrimp at a buffet with a hand using tongs
+153,burger,3plus,100,70,medium,side,bright,,cropped at edge,Cheeseburger and fries on a board with two beer glasses
+154,other,1,50,60,simple,angled,medium,,,Baked savory dish in a white oval bowl on a wooden table
+155,rice,1,100,100,complex,angled,medium,,cropped at edge,Sushi with orange garnish and creamy sauce on a black plate
+156,other,1,100,80,medium,angled,dark,,cropped at edge,Sashimi and garnish on a gray plate
+157,fried,1,100,100,medium,angled,medium,,cropped at edge,Glazed fried chicken and orange slices on a rectangular plate
+158,noodle,1,100,100,medium,side,bright,,cropped at edge,Lasagne with melted cheese and tomato sauce
+159,pizza,1,100,90,simple,angled,medium,,cropped at edge,Two flatbread slices on a tray
+160,rice,1,100,90,complex,top,medium,,,Rice with avocado fish and seaweed in a black bowl
+161,rice,1,80,70,complex,angled,bright,,,Rice and assorted foods in a divided bento box
+162,soup,1,90,90,complex,angled,medium,,,Spicy tofu stew in a white bowl
+163,noodle,1,100,100,simple,top,medium,q,cropped at edge,"Uncooked filled pasta on a preparation tray, unsuitable as a served restaurant dish stimulus"
+164,fried,3plus,40,60,complex,top,medium,t,main dish ambiguous,Several boxes of fried chicken with branded leaflets
+165,dessert,2,100,100,medium,angled,bright,,cropped at edge,Sweet baked bread topped with dark chips on a tray
+166,burger,2,100,100,medium,angled,bright,,cropped at edge,Filled bagel halves in a paper-lined basket
+167,rice,1,100,100,complex,angled,medium,,cropped at edge,Assorted sushi rolls arranged along a wooden board
+168,other,3plus,100,80,medium,top,medium,,cropped at edge,Bagels on a cooling rack with a small cream cheese cup
+169,fried,1,30,70,simple,side,medium,t,,Fries in a branded checkered cup
+170,dessert,2,90,100,medium,angled,medium,,cropped at edge,A waffle dessert with ice cream on a rectangular plate
+171,other,1,100,100,complex,top,medium,,cropped at edge,Shrimp and vegetables in a divided circular platter
+172,burger,1,100,90,simple,side,bright,,cropped at edge,A filled bagel sandwich on white paper
+173,other,3plus,80,60,complex,angled,dark,t,,Olives and vegetables in a brown bowl beside a printed menu and drinks
+174,burger,3plus,60,80,complex,side,medium,p,,A hand holding a filled sandwich above other plates
+175,grill,1,100,100,medium,angled,bright,t,cropped at edge,Steak eggs toast and hash brown on a branded plate
+176,fried,1,80,100,simple,top,medium,,cropped at edge,Sauced chicken wings in a foam box
+177,other,1,70,90,simple,angled,bright,t,,Edamame in a black bowl with a text watermark
+178,soup,2,80,80,medium,top,medium,t,cropped at edge,Soup in a bowl beside beer and printed table paper
+179,other,3plus,100,100,complex,angled,medium,,cropped at edge,Topped roasted vegetable slices and salad on a black platter
+180,burger,1,100,100,medium,angled,bright,,cropped at edge,Filled steamed buns in a takeaway box
+181,dessert,2,60,70,medium,angled,medium,t,,Powdered pastries and an iced branded coffee
+182,rice,2,100,80,medium,angled,medium,p,cropped at edge,Sushi rolls on a long platter with a diner behind
+183,other,1,80,90,complex,top,medium,,,A seafood boil with corn and lemon in a metal bowl
+184,rice,1,100,100,complex,angled,medium,t,cropped at edge,Sashimi and rice on a square plate with a watermark
+185,salad,2,60,60,complex,angled,medium,,,Fruit and chicken salad beside a bowl of creamy soup
+186,burger,1,100,70,medium,side,medium,,cropped at edge,Sandwich halves on a wooden board
+187,rice,2,100,90,complex,angled,medium,t,,Rice and chicken in a takeaway box with branded paper
+188,salad,1,100,90,complex,angled,medium,,cropped at edge,Falafel salad in a clear bowl
+189,rice,3plus,50,60,complex,angled,medium,,main dish ambiguous,Rice and stews in several takeaway containers
+190,salad,1,100,100,complex,top,medium,,cropped at edge,Chicken and bean salad in a black bowl
+191,burger,1,100,80,medium,angled,dark,,cropped at edge,Poached egg and greens on dark toast
+192,rice,1,100,100,complex,angled,medium,t,cropped at edge,Sushi rolls on a black platter with a branded card
+193,other,3plus,100,90,complex,angled,bright,t,cropped at edge,Eggs toast hash brown pancakes and bacon on branded plates
+194,dessert,1,100,100,medium,top,medium,,cropped at edge,Fruit jelly and nuts in a glass bowl
+195,burger,1,100,100,medium,side,bright,,cropped at edge,A stuffed flatbread sandwich with shrimp and vegetables
+196,salad,2,100,90,complex,angled,bright,,cropped at edge,Chicken and bacon salad with a dressing cup
+197,rice,1,100,40,simple,angled,medium,,cropped at edge,Four pieces of nigiri sushi on a long black plate
+198,fried,1,100,90,medium,angled,medium,t,cropped at edge,Fried cauliflower in a sauce-filled white tray
+199,noodle,1,100,90,complex,angled,medium,pt,,Pasta with mushrooms and herbs on a watermarked photo
+200,burger,2,100,100,complex,side,bright,t,cropped at edge,Two burgers and a side salad with a watermark
+201,pizza,3plus,100,40,complex,side,medium,t,cropped at edge,Pizza slices and salad with labeled bottles behind
+202,fried,1,100,100,complex,top,medium,,,Loaded fries with jalapeno slices in a foil tray
+203,rice,2,60,70,complex,angled,medium,,cropped at edge,Rice bowl and salad on separate plates
+204,fried,1,100,70,medium,angled,medium,t,cropped at edge,Fried snacks on an advertising photo with text and a badge
+205,grill,3plus,100,70,medium,angled,medium,t,cropped at edge,Grilled meat on a branded plate beside two drinks
+206,fried,1,100,90,medium,angled,bright,t,,Nachos and guacamole on a plate with a menu behind
+207,burger,1,100,80,medium,side,bright,,cropped at edge,Two vegetable sandwiches on a large wooden board
+208,grill,3plus,100,100,complex,top,dark,,cropped at edge,A barbecue spread with several bowls of sides
+209,fried,3plus,100,70,medium,angled,bright,p,cropped at edge,Two fried pastries on a plate with sauce bowls and diners behind
+210,noodle,1,30,20,complex,angled,medium,p,,A chef lifting pasta over a plate
+211,grill,2,100,90,complex,side,medium,t,cropped at edge,Sliced steak and vegetables on a board beside a branded drink
+212,salad,3plus,50,40,complex,angled,dark,t,,Salad seafood and wine glasses on a bar table
+213,pizza,1,70,100,simple,side,medium,,,A pizza on a metal serving stand
+214,dessert,3plus,40,30,complex,angled,medium,,main dish ambiguous,Baked pastries displayed on several trays
+215,burger,1,100,70,simple,side,medium,,cropped at edge,Double cheeseburger on a wooden board
+216,dessert,1,70,70,simple,angled,medium,,,Ice cream on a baked cookie in a small black skillet
+217,salad,3plus,80,80,complex,angled,bright,,,Falafel salad bowl beside bread and water
+218,burger,3plus,50,40,simple,top,bright,,,Two plates of bagels and two coffee cups
+219,burger,1,100,100,medium,side,bright,,cropped at edge,Filled wrap halves and fries on a wooden board
+220,salad,1,100,70,simple,angled,medium,,cropped at edge,Mozzarella tomato and basil on a white plate
+221,rice,1,100,90,complex,angled,medium,,cropped at edge,Rice and roasted meat on a metal platter
+222,burger,1,100,100,simple,side,medium,t,cropped at edge,Fried chicken sandwich on a red branded liner
+223,burger,1,100,100,medium,side,medium,,cropped at edge,Cut wrap pieces showing vegetable filling
+224,burger,2,70,70,medium,side,bright,,cropped at edge,Cheeseburger on a board with fries and a small sauce bowl
+225,burger,3plus,30,50,complex,angled,medium,pt,main dish ambiguous,Diners holding giant burgers with drinks and side dishes
+226,pizza,3plus,60,40,complex,angled,medium,,cropped at edge,Pizza wings breadsticks and cinnamon rolls on separate trays
+227,other,3plus,100,40,simple,side,medium,,cropped at edge,Cheese fondue on bread with vegetable and bread bowls behind
+228,soup,3plus,40,50,complex,top,medium,p,,Curry rice bread and drinks spread over a table
+229,dessert,1,100,100,simple,angled,bright,,cropped at edge,Cupcakes with two colors of icing on a cooling rack
+230,rice,3plus,90,90,complex,angled,bright,t,,Poke bowl with avocado seaweed and a small logo watermark
+231,other,1,100,60,simple,angled,medium,,cropped at edge,Cooked plantain pieces on an oval white plate
+232,drink,3plus,30,40,medium,side,bright,tc,main dish ambiguous,A collage of branded smoothie cups
+233,grill,3plus,100,60,complex,angled,medium,,cropped at edge,Grilled meat over salad with another plate behind
+234,rice,3plus,70,60,complex,angled,bright,,cropped at edge,Two rice bowls and a small sauce cup
+235,dessert,2,100,60,medium,angled,medium,,cropped at edge,Pancakes fried chicken and syrup on a white plate
+236,burger,3plus,100,70,complex,angled,medium,,cropped at edge,Burger and fries on a board beside two sauce bowls
+237,pizza,1,70,70,medium,top,bright,,,Small pizza with spiral sauce on a white background
+238,dessert,3plus,100,90,medium,angled,medium,,cropped at edge,Sugared doughnut balls in a bowl with sauces behind
+239,burger,3plus,100,90,medium,side,medium,t,,Burger fries and sauce on a black plate with a caption
+240,fried,1,40,60,medium,side,medium,p,no food container visible,A person holding a fried chicken drumstick
+241,rice,3plus,100,80,complex,side,medium,p,cropped at edge,Rice meat and fries on a plate with diners behind
+242,soup,2,30,40,simple,top,bright,,,Two small bowls of soup on a large wooden tray
+243,rice,1,100,100,complex,top,medium,,cropped at edge,Rice curry salad and guacamole in a divided black tray
+244,grill,1,100,100,medium,angled,medium,,cropped at edge,Grilled salmon rice and broccoli on a square plate
+245,salad,1,70,90,medium,side,bright,,,A fruit bouquet with chocolate-dipped pieces in a green vase
+246,fried,1,100,90,complex,side,medium,,cropped at edge,Loaded fried bites with creamy sauce on a white plate
+247,grill,2,100,90,medium,angled,medium,,cropped at edge,Sliced grilled steak and herbs on a metal platter
+248,other,1,90,80,simple,top,bright,,cropped at edge,Porridge with berries and nuts in a wide white bowl
+249,fried,3plus,100,50,medium,angled,medium,,cropped at edge,Fish and chips on a rectangular plate beside iced tea and sauce
+250,burger,1,100,90,medium,side,bright,,cropped at edge,Chicken sandwich with avocado and greens
+251,fried,1,100,50,simple,side,bright,,cropped at edge,Glazed fried chicken pieces on a dark plate
+252,burger,3plus,40,50,complex,angled,medium,pt,,A hand holding a burger beside branded drink cups
+253,burger,1,40,40,complex,side,medium,pt,,A cook pressing a burger in a kitchen
+254,fried,2,100,60,simple,top,bright,,cropped at edge,Spring rolls on two rectangular plates with built-in sauce wells
+255,burger,2,70,50,medium,angled,medium,t,,Seafood tacos on a plate beside a labeled beer bottle
+256,dessert,2,100,90,medium,angled,bright,,cropped at edge,Cream and berries on a white plate with another dessert behind
+257,salad,3plus,50,70,complex,top,bright,,,A grain and vegetable salad surrounded by bowls of ingredients
+258,rice,1,100,100,medium,angled,medium,,cropped at edge,Salmon-topped sushi rolls with red roe on a white platter
+259,fried,3plus,60,60,complex,angled,dark,t,cropped at edge,Fried chicken rice soup and drinks with menus and branded sauce
+260,soup,3plus,60,60,complex,angled,medium,,,Curry bowls topped with rice on a metal tray
+261,other,1,100,100,medium,angled,medium,,cropped at edge,Steamed dumplings in a bamboo basket
+262,fried,2,90,70,medium,angled,medium,,,Chicken wings and carrot sticks with a dip cup
+263,rice,1,100,100,medium,angled,medium,,cropped at edge,A shaped rice dish with orange sauce on a black plate
+264,other,3plus,50,40,complex,top,medium,,main dish ambiguous,Several breakfast plates on a wooden table
+265,burger,2,100,70,medium,side,medium,t,cropped at edge,Filled meat sandwich with chips and a labeled sauce bottle
+266,grill,1,100,100,medium,top,dark,,cropped at edge,Glazed meat garnished with herbs and pomegranate on a white plate
+267,dessert,1,100,100,medium,angled,bright,,cropped at edge,Mango sticky rice with carved vegetable garnish
+268,other,3plus,50,40,complex,angled,medium,,,Corn and topped chips on metal plates beside beer
+269,salad,1,100,90,medium,angled,medium,,cropped at edge,Beetroot salad with cheese on an oval white plate
+270,dessert,2,90,80,simple,angled,bright,,cropped at edge,Ice cream with espresso in a white cup beside a metal coffee jug
+271,grill,1,100,80,simple,side,medium,,cropped at edge,Steak topped with shrimp and sauce
+272,burger,2,100,100,medium,angled,bright,,cropped at edge,Sandwich halves fries and a sauce cup on a white plate
+273,fried,3plus,100,80,complex,angled,medium,pt,cropped at edge,A person holding a large fried seafood tray with dips
+274,fried,1,100,100,medium,top,medium,t,cropped at edge,Fried chicken and condiments in a printed takeaway box
+275,fried,1,100,100,medium,angled,bright,,cropped at edge,Fried rice balls on a black rectangular plate
+276,burger,2,90,60,medium,side,medium,,,Burger and a separate bowl of onion rings on a platter
+277,burger,3plus,100,60,medium,angled,medium,t,cropped at edge,Avocado and egg toast with a printed mug behind
+278,other,3plus,50,60,complex,top,medium,t,cropped at edge,Eggs potatoes crepe coffee and syrup on a table
+279,soup,3plus,60,80,complex,top,dark,p,,Soup and toast on a square plate with drinks and a hand
+280,salad,1,100,100,complex,top,bright,,cropped at edge,Chicken salad with tomatoes radish and crispy noodles
+281,dessert,3plus,100,70,simple,angled,medium,,cropped at edge,Chocolate cake and raspberries on a patterned plate
+282,dessert,1,100,100,simple,top,medium,t,cropped at edge,Tiramisu on a branded white plate
+283,fried,1,100,100,complex,top,medium,,cropped at edge,Loaded chips with cream and dark sauce
+284,grill,3plus,100,60,complex,side,medium,pt,cropped at edge,Fish and grains on a patio table with diners and drinks
+285,burger,3plus,100,40,medium,side,medium,pt,cropped at edge,Sandwiches and chips beside branded drink cups and a diner
+286,grill,3plus,90,40,complex,angled,medium,,,Seafood and vegetables on a rectangular plate beside drinks
+287,rice,1,100,70,medium,angled,bright,,cropped at edge,Rice beans and sauced meat on a square white plate
+288,rice,3plus,50,50,complex,top,medium,c,main dish ambiguous,A four-panel collage of meals with rice and avocado
+289,pizza,2,100,90,medium,angled,medium,,cropped at edge,Thick pizza on a plate beside a drink
+290,grill,3plus,100,90,medium,angled,medium,p,cropped at edge,Hands slicing roast meat on a board beside seasoning bowls
+291,salad,2,80,100,complex,angled,bright,,cropped at edge,Strawberry and cheese salad in a bowl beside a cheese board
+292,burger,1,100,100,medium,angled,bright,,cropped at edge,Poached eggs and meat on toast on a white plate
+293,burger,2,90,90,medium,side,bright,,,Burger and fries with a small sauce cup on a white plate
+294,burger,1,100,100,complex,top,medium,,cropped at edge,Burger and loaded fries in a lined basket
+295,burger,3plus,100,60,complex,angled,medium,,cropped at edge,Several sliders on separate metal trays
+296,other,2,60,70,simple,angled,medium,,cropped at edge,Bread on a plate beside a bowl of olive oil
+297,dessert,1,100,100,medium,top,bright,,cropped at edge,Yogurt cream and cut fruit in a white bowl
+298,grill,3plus,50,60,complex,top,bright,,cropped at edge,Fish scallops soup and drinks across a table
+299,burger,2,60,70,complex,top,medium,t,cropped at edge,Two loaded tacos on branded paper
+300,grill,1,80,100,simple,top,bright,,cropped at edge,Grilled bone-in steak on a round white plate
+301,grill,3plus,100,70,medium,angled,bright,,cropped at edge,Fish mash and vegetables with bread and a drink behind
+302,dessert,2,90,70,medium,angled,bright,t,,Cookies and chocolate dip in a printed gift box
+303,rice,1,100,100,medium,angled,bright,,cropped at edge,Sushi rolls and decorative sauce on a square white plate
+304,burger,1,70,50,medium,angled,medium,pt,,A chef holding a salad and toast plate
+305,soup,3plus,100,90,complex,angled,medium,t,cropped at edge,Chili topped with cheese in a white bowl beside drinks and wrappers
+306,salad,1,100,100,medium,side,medium,tq,cropped at edge,A blurred fruit bouquet with a decorative branded tag
+307,burger,3plus,100,100,medium,angled,bright,,cropped at edge,Long toasted sandwiches with two sauce cups
+308,burger,1,100,90,medium,angled,bright,,cropped at edge,A taco in a folded white paper tray
+309,grill,3plus,90,60,medium,side,medium,,,Roast meat and vegetables with sauce bread and wine
+310,noodle,3plus,60,30,complex,side,medium,t,,Takeaway pasta and salad with a branded paper bag
+311,fried,1,100,100,simple,top,medium,,cropped at edge,Two spring roll halves on a blue plate
+312,burger,1,100,100,medium,angled,bright,,cropped at edge,A filled meat sandwich on patterned paper
+313,other,1,100,100,simple,angled,dark,,cropped at edge,Meat and melted cheese cooking on a large pan
+314,burger,1,100,100,complex,side,bright,,cropped at edge,A loaded taco with slaw and creamy sauce
+315,other,1,100,80,simple,side,medium,,container boundary unclear,Sliced rustic bread on a white surface
+316,grill,2,100,100,medium,top,dark,,cropped at edge,Meat and vegetables cooking on a round grill
+317,dessert,3plus,100,100,medium,side,medium,t,cropped at edge,Cupcakes with a printed flavor list and logos
+318,burger,1,100,80,medium,side,medium,t,cropped at edge,Croissant sandwich halves in a shop with menus behind
+319,burger,1,90,100,medium,top,medium,,,A long meat sandwich with mustard and pickles
+320,dessert,1,100,60,simple,side,bright,p,cropped at edge,Cheesecake being cut with a fork held in a hand
+321,dessert,3plus,40,20,complex,angled,dark,t,main dish ambiguous,Macarons displayed on trays with price and flavor labels
+322,burger,2,50,80,medium,top,medium,,,Three small tacos and guacamole on a round plate
+323,burger,3plus,60,50,complex,top,bright,,cropped at edge,Burritos chips soup and sauces spread over a table
+324,other,1,90,100,complex,angled,medium,p,,A seafood boil in a blue pot held at a table
+325,dessert,1,100,100,simple,side,bright,p,cropped at edge,Ice cream scoops in a cup held in a hand
+326,fried,3plus,80,90,complex,top,medium,,,Wings fries salad and a sauce cup on a metal tray
+327,pizza,1,100,100,medium,angled,medium,,cropped at edge,Deep-dish pizza on a metal pan
+328,pizza,1,60,60,complex,angled,medium,pt,cropped at edge,A hand lifting a pizza slice from a branded box
+329,fried,2,80,40,simple,side,bright,,container boundary unclear,Mozzarella sticks and tomato dip on a white surface
+330,dessert,3plus,70,70,medium,angled,bright,t,,Berry dessert with cream and a photographer watermark
+331,burger,1,100,80,medium,side,medium,,cropped at edge,Two meat-filled tacos on a wooden board
+332,dessert,1,80,70,simple,angled,bright,,,Tiramisu with cream on a decorated white plate
+333,pizza,1,100,80,medium,top,medium,,cropped at edge,Pizza with diced toppings on a metal pan
+334,dessert,1,70,90,simple,side,bright,t,,Ice cream and waffle pieces in a branded paper cup
+335,burger,2,100,40,simple,side,bright,t,cropped at edge,Toast burger and fries beside a branded soda cup
+336,pizza,1,100,90,medium,angled,medium,,cropped at edge,Thin pizza on a round metal pan
+337,rice,1,100,100,complex,angled,bright,t,cropped at edge,Assorted sushi rolls on a decorated white platter
+338,noodle,1,100,80,complex,side,medium,,cropped at edge,Crispy noodle nest topped with vegetables on a white plate
+339,burger,1,100,100,simple,side,bright,,cropped at edge,A sesame bagel sandwich with lettuce and turkey
+340,burger,2,90,70,medium,side,medium,t,,Burger and fries in a white bowl beside a labeled bottle
+341,dessert,3plus,90,50,medium,angled,bright,,,Pancakes with fruit and cream beside juice and berries
+342,burger,2,100,60,complex,side,bright,t,cropped at edge,A branded fried chicken sandwich advertisement
+343,other,1,100,100,medium,angled,medium,,cropped at edge,Baked oysters lemon and bread on a paper-lined tray
+344,fried,1,90,60,complex,side,medium,,,Loaded fries with jalapenos on a lined metal plate
+345,noodle,2,60,100,complex,side,medium,t,,Noodles lifted from a printed cup beside a labeled soda bottle
+346,other,2,80,80,simple,angled,bright,,cropped at edge,Cheese bread on a wooden board beside tomato dip
+347,dessert,2,50,70,medium,side,bright,t,cropped at edge,Two branded fruit dessert cups under large promotional text
+348,salad,1,60,90,medium,side,bright,t,,Fruit bouquet in a football-shaped vase with brand marks
+349,dessert,1,80,100,medium,angled,medium,,,Ice cream and cream with nuts in a glass bowl
+350,noodle,2,70,50,medium,angled,bright,,cropped at edge,Pasta and meatballs on a plate beside a bowl of cheese
+351,other,3plus,100,70,complex,angled,dark,,cropped at edge,Baked oysters and toast with other dishes and drinks behind
+352,fried,2,100,100,medium,angled,medium,,cropped at edge,Chicken wings carrots celery and sauce under magenta lighting
+353,rice,3plus,70,80,complex,angled,medium,t,,Bibimbap with other small dishes and printed wrappers
+354,burger,1,100,50,medium,side,bright,p,,A person holding a sandwich above a plate with another sandwich
+355,burger,3plus,100,70,medium,side,medium,t,cropped at edge,Burger fries and a drink with branded containers and liner
+356,other,1,100,60,complex,angled,medium,t,,Omelette potatoes and toast on a plate with a watermark
+357,burger,2,90,90,medium,top,dark,,,Sandwich and loaded fries on a plate beside a drink
+358,other,1,70,60,simple,angled,medium,,,Spicy shredded vegetables in a small patterned bowl
+359,other,2,100,70,medium,side,bright,,cropped at edge,Steamed dumplings around a central sauce bowl
+360,other,3plus,100,100,complex,angled,medium,pt,cropped at edge,A printed magazine page showing people and dishes
+361,salad,3plus,90,60,complex,side,bright,,cropped at edge,Chicken salad in a bowl with another salad and oil behind
+362,burger,2,90,40,medium,side,medium,t,,Chicken sandwich and fries beside a branded shake and box
+363,rice,1,100,80,simple,angled,medium,,cropped at edge,Rice with shredded meat in a white bowl
+364,burger,2,100,60,medium,side,medium,,cropped at edge,Burger and fries on a board beside a plastic soda cup
+365,dessert,3plus,100,90,simple,side,bright,,cropped at edge,Three soft-serve ice cream cones
+366,burger,1,100,100,simple,top,bright,,cropped at edge,Fried fish sandwiches on white paper
+367,dessert,1,100,90,medium,angled,bright,,cropped at edge,Assorted iced cookies on a glass cake stand
+368,burger,1,100,100,simple,angled,dark,q,cropped at edge,A soft-focus bacon burger and fries
+369,dessert,2,90,50,medium,side,bright,,,Pancakes eggs and bacon on a plate beside coffee
+370,fried,3plus,50,30,simple,side,medium,p,,A hand dipping a fried bite above a sauce bowl
+371,dessert,1,100,90,simple,angled,bright,,cropped at edge,Creme brulee and berries in a white ramekin
+372,dessert,1,100,100,medium,angled,medium,t,cropped at edge,Sweet pastries on a platter with a photographer watermark
+373,fried,3plus,60,100,complex,top,medium,,cropped at edge,Two fried chicken trays with a separate macaroni cup
+374,fried,1,90,50,simple,top,bright,pt,no food container visible,Hands holding two chips over a branded liner
+375,burger,3plus,60,40,complex,angled,medium,pt,,Toast dishes drinks and menus with a diner behind
+376,salad,1,100,100,complex,top,medium,,cropped at edge,Lettuce cucumber tomato olives and grated cheese filling the frame
+377,fried,3plus,100,90,medium,angled,medium,t,cropped at edge,Wings vegetables and dip with watermarks and a salad behind
+378,fried,1,100,80,simple,angled,medium,,cropped at edge,Two fried turnovers on a dark plate
+379,other,3plus,60,30,complex,angled,medium,pt,cropped at edge,Diners at a seafood table with branded bibs and wall writing
+380,dessert,1,100,80,simple,side,medium,,cropped at edge,Cheesecake slices with fruit sauce on a white platter
+381,burger,1,100,90,simple,side,bright,,cropped at edge,A tall stacked sandwich with chips on a white plate
+382,burger,2,100,90,medium,side,medium,,cropped at edge,Toasted sandwich and salad on a rectangular plate beside iced tea
+383,rice,1,60,80,medium,angled,medium,t,,Rice vegetables and meat in a branded cup on a printed menu
+384,other,1,100,80,medium,angled,bright,,cropped at edge,Dumplings and dark sauce in a long white bowl
+385,pizza,2,50,100,medium,top,bright,,main dish ambiguous; cropped at edge,Two pizzas in adjacent boxes
+386,fried,3plus,90,80,medium,top,dark,t,,Fried chicken and dip under red lighting on printed table paper
+387,burger,1,100,90,complex,top,medium,t,cropped at edge,Loaded tacos on a branded liner
+388,other,1,100,100,medium,angled,medium,t,cropped at edge,Cheese fruit and nuts on a board with a text caption
+389,pizza,1,100,90,complex,angled,medium,t,cropped at edge,A large topped pizza in a printed box
+390,burger,1,100,100,simple,top,medium,,,Bruschetta with tomato and cheese on a white plate
+391,other,1,10,10,complex,angled,bright,ptq,no food container visible,People in a vaccination setting with no dish visible
+392,fried,2,100,100,complex,top,medium,,cropped at edge,Loaded chips arranged around a central dip bowl
+393,grill,3plus,100,50,medium,side,bright,,cropped at edge,Pulled meat slaw and croquettes on a plate beside a drink
+394,burger,2,80,50,complex,side,medium,t,,Tacos chips and salsa on a tray in a bar with printed screens
+395,pizza,1,90,100,complex,top,medium,,,Rectangular pizza with meat and green peppers on a cooling rack
+396,burger,3plus,60,90,complex,top,bright,t,main dish ambiguous; cropped at edge,Tacos chips and dips with branded liners
+397,dessert,1,100,90,simple,side,bright,,cropped at edge,A cheesecake slice with red and chocolate sauce
+398,other,1,10,10,complex,angled,medium,q,no food container visible,Empty decorative rabbit plates and ornaments with no food
+399,burger,2,70,60,medium,angled,medium,t,,Burrito halves and salsa on a plate beside a branded placemat
+400,grill,1,100,70,medium,side,bright,,cropped at edge,Salmon mashed potatoes and asparagus on a white plate
+401,dessert,1,70,60,medium,angled,medium,t,,A decorated cake with a wedding topper and printed bridal glasses
+402,fried,1,100,100,simple,top,medium,,,Cheese-covered fries in a foil tray
+403,burger,3plus,60,50,medium,side,medium,t,container boundary unclear,Burger fries and soda with branded cups
+404,grill,1,100,100,medium,angled,bright,,cropped at edge,Grilled salmon vegetables and sauce on a square white plate
+405,salad,1,90,90,simple,top,medium,,,Tomato mozzarella and basil with dark sauce on a plate
+406,burger,1,90,80,medium,side,medium,,,Breakfast sandwich halves and fries on a rectangular plate
+407,noodle,1,80,100,medium,top,bright,,cropped at edge,Pasta with grated cheese on a wide white plate
+408,rice,2,80,40,complex,side,medium,t,cropped at edge,Rice and chicken bowl beside a printed bottle
+409,grill,1,80,100,simple,top,medium,t,,Steak and baked potato on a branded plate
+410,fried,3plus,80,50,medium,angled,medium,,,Chips with bowls of salsa and guacamole
+411,pizza,3plus,100,100,medium,angled,medium,p,cropped at edge,A hand lifting a pizza slice with drinks behind
+412,noodle,3plus,30,20,complex,angled,medium,pt,main dish ambiguous,Diners eating several noodle bowls with drinks and menus
+413,grill,2,100,90,complex,angled,medium,,cropped at edge,Steak potatoes vegetables and a sauce cup on a plate
+414,grill,2,90,50,complex,side,bright,t,cropped at edge,Beef vegetables and rice with a large watermark
+415,noodle,1,100,90,medium,top,medium,,cropped at edge,Sauced pasta with olives in an open cardboard box
+416,grill,2,80,80,medium,top,bright,,,Steak shrimp and broccoli on a plate beside wine
+417,burger,1,100,90,medium,side,bright,,cropped at edge,Toasted sandwich halves and creamy potatoes on a white plate
+418,grill,3plus,80,80,complex,angled,medium,,cropped at edge,Grilled seafood and risotto in a large plate beside drinks
+419,dessert,1,100,70,simple,side,medium,,cropped at edge,Layered ice cream and wafer dessert with fruit sauce
+420,burger,1,70,100,medium,top,medium,,,A cut burrito showing its filling
+421,fried,3plus,90,40,complex,side,medium,,,Loaded nachos with two beer glasses behind
+422,other,3plus,70,50,complex,top,medium,t,cropped at edge,Pretzel and sauce with beer and branded tabletop blocks
+423,grill,2,100,100,medium,top,medium,,cropped at edge,Sliced steak and grilled onions beside a cocktail
+424,rice,1,100,100,medium,angled,bright,,cropped at edge,A ring of sushi with avocado and fish toppings
+425,fried,2,90,60,medium,top,dark,t,,Fried calamari and dipping sauce on printed table paper
+426,salad,1,90,100,complex,top,medium,,cropped at edge,Caesar salad on a white plate
+427,noodle,3plus,90,60,complex,angled,medium,p,cropped at edge,Noodles sushi sashimi and edamame with drinks and a diner
+428,salad,1,80,100,complex,top,bright,t,cropped at edge,Salad in a black tray beside branded dressing packets
+429,rice,1,100,100,complex,top,medium,,,Fish seaweed and cabbage over rice in a black bowl
+430,rice,2,90,90,medium,top,medium,,,Rice portions on leaves around a central curry cup
+431,dessert,2,100,100,simple,angled,bright,,cropped at edge,Powdered fried pastries with a dark dipping cup
+432,other,3plus,100,100,complex,top,medium,,cropped at edge,Bread sausage sauerkraut and two cheese sauce cups
+433,pizza,1,70,70,medium,top,bright,,,A small vegetable pizza on a white background
+434,burger,1,100,100,medium,side,bright,,cropped at edge,Sandwich halves showing layers of meat and vegetables
+435,pizza,1,100,90,medium,angled,medium,,cropped at edge,Thin cheese pizza with green peppers on a metal pan
+436,burger,3plus,100,80,complex,angled,medium,p,cropped at edge,Hands eating quesadillas with chips and dips
+437,fried,2,100,100,medium,angled,bright,,cropped at edge,Fish fries slaw and a sauce cup on a square plate
+438,noodle,3plus,80,90,complex,angled,medium,,cropped at edge,Stir-fried noodles on a round plate with drinks behind
+439,grill,1,100,90,medium,side,dark,,cropped at edge,Glazed ribs baked potato and cream on a white plate
+440,soup,2,70,50,medium,side,medium,t,,Seafood stew in a black pan beside a labeled drink
+441,dessert,1,80,70,medium,side,medium,pt,no food container visible,A hand holding a pastry in front of a bakery sign
+442,fried,3plus,80,80,medium,top,bright,t,,Fries and ketchup on branded restaurant paper
+443,dessert,1,80,90,medium,side,medium,t,,Ice cream in a branded cup with an inverted cone
+444,burger,3plus,60,70,complex,angled,medium,,,Sandwiches loaded potatoes and salad on separate plates and a board
+445,noodle,2,80,60,medium,angled,bright,,,Broth being poured into a noodle bowl on a tray
+446,grill,3plus,60,40,complex,angled,medium,,,Shrimp rice sauces and a drink on a wooden table
+447,noodle,1,100,100,medium,top,medium,,cropped at edge,Broad pasta with cheese and basil in a gray bowl
+448,burger,3plus,80,30,complex,side,medium,p,,A diner adding sauce to tacos among several dishes and drinks
+449,other,3plus,100,100,complex,angled,medium,,cropped at edge,Oysters and a dressing cup in a large metal bowl with drinks below
+450,drink,3plus,20,50,complex,angled,bright,pt,main dish ambiguous,People holding branded beer cups in a shop
+451,burger,1,90,90,medium,top,medium,,,Club sandwich quarters and fries on a square plate
+452,other,3plus,90,100,complex,angled,medium,t,cropped at edge,Cheese fruit bread and meats with menus behind
+453,rice,3plus,100,80,complex,angled,medium,,,Fried chicken rice macaroni and a sauce cup
+454,burger,1,70,80,medium,angled,dark,,,Three grilled fish tacos and pineapple on a white plate
+455,rice,1,100,100,medium,top,medium,,cropped at edge,Eggs meat and pickled vegetables over rice
+456,dessert,2,60,60,medium,top,bright,,,A berry dessert bowl beside sliced bread
+457,other,1,90,90,simple,top,medium,,,Cauliflower and hummus in a white bowl
+458,pizza,1,80,100,medium,top,bright,,cropped at edge,A pizza with orange and yellow pepper strips
+459,burger,3plus,100,90,medium,side,bright,,cropped at edge,Sandwich halves topped with fried onion and a salad
+460,burger,3plus,100,70,medium,side,medium,,,Double cheeseburger fries and a drink with another dish behind
+461,fried,2,100,90,simple,side,medium,,cropped at edge,Chips surrounding a guacamole cup on a dark plate
+462,grill,3plus,60,80,complex,top,bright,,,Steak egg rice sausage and a small stew bowl on separate plates
+463,fried,2,100,100,medium,angled,medium,t,cropped at edge,Fish and chips with a dip cup in a printed basket liner
+464,other,3plus,70,60,complex,angled,medium,t,cropped at edge,Mussels and bread on a table with printed paper and drinks
+465,fried,3plus,60,60,complex,top,medium,t,cropped at edge,Chips guacamole and salsa with a menu on the table
+466,fried,3plus,70,70,simple,top,bright,,,Cheese fries on a white plate beside ketchup and a partial side bowl
+467,grill,1,100,60,medium,side,medium,,cropped at edge,Seafood skewers rice and salad on a white plate
+468,dessert,1,90,80,simple,angled,medium,,,Cookie and ice cream with chocolate sauce on a white plate
+469,fried,1,100,70,complex,angled,medium,p,cropped at edge,A hand taking a chip from loaded nachos
+470,other,1,10,10,complex,top,medium,q,no food container visible,Whole decorative gourds filling the frame with no prepared dish
+471,fried,3plus,60,60,complex,top,medium,,main dish ambiguous; cropped at edge,Several plates of calamari burger fries and sauces
+472,dessert,1,100,100,simple,top,medium,p,cropped at edge,A chocolate-drizzled pastry on a clear plate held by a hand
+473,salad,1,70,50,complex,side,bright,p,,A person holding a chicken salad bowl
+474,other,1,100,100,medium,angled,bright,,cropped at edge,A corn cake topped with meat and pickled onion
+475,pizza,1,100,90,simple,side,bright,,cropped at edge,A pepperoni pizza slice lifted with melted cheese stretching
+476,dessert,3plus,70,40,complex,side,bright,t,,Assorted cakes and muffins with a small printed card behind
+477,burger,1,100,100,complex,angled,bright,,cropped at edge,Cheese-covered burrito with rice and vegetables on a white plate
+478,burger,3plus,30,30,complex,angled,medium,pt,main dish ambiguous,Diners holding sandwich plates in a restaurant
+479,burger,2,100,100,medium,angled,bright,,cropped at edge,Fried shrimp tacos and fries with a small slaw bowl
+480,other,3plus,100,60,medium,angled,medium,,cropped at edge,Flatbread and several dips on rectangular white plates
+481,burger,2,100,100,medium,top,medium,,cropped at edge,Fried fish sandwich potatoes and part of a soup cup
+482,rice,3plus,50,50,complex,top,bright,,,Rice tofu salad falafel and several sides on separate dishes
+483,grill,3plus,60,30,complex,side,medium,t,,Roast meat and side dishes with branded takeaway packaging
+484,pizza,1,100,80,simple,side,medium,p,no food container visible,A hand holding a thin pizza slice
+485,other,1,100,100,simple,angled,bright,t,cropped at edge,Scrambled eggs and toast beside a labeled butter packet
+486,burger,1,100,90,simple,side,medium,,cropped at edge,A chicken sandwich in a paper-lined basket
+487,grill,1,100,90,simple,angled,medium,,,Glazed ribs and broccoli on a white plate
+488,pizza,1,100,100,medium,top,medium,,cropped at edge,Chicken and cheese pizza in an open cardboard box
+489,noodle,2,100,70,medium,angled,medium,t,,Pasta on a red plate beside a labeled whiskey bottle
+490,burger,1,100,80,simple,side,bright,,cropped at edge,A grilled sandwich on a wooden board
+491,grill,1,100,100,medium,top,bright,,,Sliced roast pork with carrots on a speckled plate
+492,burger,2,100,80,medium,side,medium,t,cropped at edge,Burger and fries on a wooden board beside labeled sauce
+493,pizza,2,100,50,complex,top,medium,,main dish ambiguous; cropped at edge,Two types of flatbread pizza on adjacent wooden boards
+494,pizza,1,90,70,medium,top,medium,,cropped at edge,Flatbread pizza with sauce on a wooden paddle
+495,pizza,1,100,100,medium,angled,medium,,cropped at edge,Close view of a pizza with sausage and pepperoni
+496,dessert,1,100,100,simple,angled,bright,,cropped at edge,Golden savory biscuits on white paper
+497,grill,1,60,80,medium,top,medium,,,Salmon asparagus mushrooms and tomatoes on an oval pan
+498,grill,1,100,100,complex,angled,medium,,cropped at edge,Grilled seasoned fish with vegetables on a hot metal platter
+499,pizza,1,100,100,simple,top,bright,t,cropped at edge,White pizza with tomato and garlic plus a restaurant text overlay
+500,burger,1,100,50,medium,side,bright,,cropped at edge,Three lettuce wraps with grilled filling on a slate board
+501,salad,1,100,60,medium,side,bright,,cropped at edge,A seafood and vegetable stack with flatbread on a white plate
+502,salad,3plus,70,80,complex,angled,medium,,cropped at edge,Egg avocado and grain salad with toast and a drink
+503,other,1,100,100,simple,angled,bright,,cropped at edge,Garlic knots with herb butter on a white plate
+504,burger,2,100,50,medium,side,bright,t,cropped at edge,Burger fries and beer under large promotional text
+505,burger,3plus,100,60,medium,side,medium,,cropped at edge,Eggs and sauced meat on toast beside drinks
+506,dessert,3plus,100,50,complex,side,bright,,cropped at edge,French toast with fruit cream syrup and coffee
+507,burger,3plus,80,80,medium,top,bright,t,,Loaded sandwich and fries with labeled condiment packets and soup cups
+508,noodle,1,100,100,medium,top,bright,,cropped at edge,Pasta with vegetables and white cheese in a wide bowl
+509,burger,1,100,90,medium,angled,medium,,cropped at edge,Vegetable croissant sandwich with potato chips on a black plate
+510,noodle,1,100,100,simple,angled,bright,,cropped at edge,Gnocchi with shaved cheese on a white plate
+511,other,3plus,100,90,complex,top,medium,p,,Several small savory dishes in paper boats with a hand nearby
+512,rice,1,100,100,complex,top,medium,,,Rice chicken and vegetables in a divided black tray
+513,pizza,1,100,100,complex,top,medium,,,Oval pizza with mixed vegetables in a cardboard box
+514,fried,1,100,90,simple,angled,medium,,cropped at edge,A large fried stuffed pastry on a wooden board
+515,burger,1,100,70,medium,side,bright,p,cropped at edge,Eggs and sauced pulled meat on a bread base
+516,pizza,1,100,100,medium,angled,bright,p,cropped at edge,A hand lifting a cheese-covered pizza slice
+517,rice,3plus,50,100,complex,top,medium,t,cropped at edge,Sushi rolls on black platters beside a branded menu
+518,rice,3plus,50,60,complex,top,bright,,cropped at edge,Rice salad soup and a green drink in takeaway containers
+519,other,3plus,90,90,medium,top,medium,,cropped at edge,Baked dip and toast on a white plate with other dishes nearby
+520,grill,2,100,100,simple,top,medium,,cropped at edge,Glazed ribs and a sauce cup on a wooden board
+521,burger,1,100,100,simple,angled,medium,,cropped at edge,Grilled flatbread sandwich in a paper-lined basket
+522,rice,1,70,80,medium,angled,medium,,,Chicken broccoli and rice in a black bowl
+523,burger,2,100,60,medium,side,medium,,cropped at edge,Bacon burger and waffle fries on slate beside beer
+524,other,1,100,80,simple,angled,bright,,,Terrine bread pickles and sauce on a white plate
+525,burger,2,100,70,medium,side,bright,t,cropped at edge,Loaded sandwich in a basket beside a printed beer cup
+526,salad,2,100,90,complex,angled,bright,,cropped at edge,Chicken and avocado salad with a separate dressing bowl
+527,pizza,1,100,90,simple,side,bright,,cropped at edge,A cut calzone with creamy filling on a metal pan
+528,noodle,1,100,100,simple,top,bright,,cropped at edge,Filled pasta with creamy sauce in a black pan
+529,fried,1,100,90,medium,angled,bright,,cropped at edge,A fried rice ball with tomato sauce and salad
+530,dessert,1,100,90,medium,side,bright,,cropped at edge,Chocolate cake ice cream and fruit on a white plate
+531,soup,1,90,80,medium,angled,medium,t,,Chili with cheese and onion beside a labeled cracker packet
+532,fried,1,100,70,medium,side,medium,t,cropped at edge,Breaded cakes over lettuce with labeled sauces behind
+533,fried,3plus,100,100,complex,side,medium,p,cropped at edge,Fried chicken with macaroni muffins and diners behind
+534,pizza,1,90,90,simple,angled,medium,,cropped at edge,A large cheese pizza on a restaurant table
+535,burger,1,100,100,simple,angled,bright,t,cropped at edge,A filled wrap on branded paper with a logo overlay
+536,fried,3plus,90,70,medium,angled,dark,p,,Large fried snack with dip and drinks at a dark table
+537,other,1,100,100,medium,angled,medium,t,cropped at edge,Glazed vegetables with broccoli and a restaurant watermark
+538,dessert,1,100,80,medium,angled,medium,,cropped at edge,Cream ice cream and brownie pieces on a white plate
+539,grill,1,100,60,simple,side,dark,,cropped at edge,Sliced meat and roasted potatoes on a rectangular plate
+540,burger,3plus,50,70,medium,top,medium,,,Club sandwiches on one plate and fries on another
+541,fried,3plus,100,80,medium,side,medium,,cropped at edge,Fried chicken with fries and a sauce cup
+542,other,1,100,80,simple,angled,medium,p,cropped at edge,A person holding a tray of breadsticks with an oven mitt
+543,other,2,70,50,simple,angled,medium,,container boundary unclear,Savory rolled pastries with a small dressing bowl
+544,grill,3plus,100,100,complex,angled,medium,,cropped at edge,Ribs sausage and three side cups on a white plate
+545,noodle,3plus,60,30,medium,side,dark,t,,Pasta with green sauce beside a labeled wine bottle and glass
+546,dessert,1,100,90,simple,angled,medium,,cropped at edge,Baklava pieces on a metal baking tray
+547,noodle,1,100,100,complex,top,medium,,cropped at edge,Noodles vegetables and sliced garlic in a takeaway box
+548,pizza,1,100,50,medium,angled,medium,,cropped at edge,Sliced flatbread with cheese and vegetables on a board
+549,grill,1,100,70,medium,side,medium,,cropped at edge,Glazed chicken pieces and herbs on a metal tray
+550,fried,1,100,100,simple,top,medium,,,Fries covered with melted cheese in a foil tray
+551,dessert,1,100,90,simple,angled,medium,,cropped at edge,Pecan pie and cream on a white plate
+552,burger,1,80,100,simple,angled,medium,t,,A toasted cheese sandwich with a watermark
+553,rice,2,100,100,medium,top,medium,,,Sushi and a drink on a restaurant table
+554,burger,2,100,90,medium,angled,bright,t,cropped at edge,Tacos and tortilla chips beside a labeled beer bottle
+555,other,2,100,90,complex,angled,bright,,,Mussels bread and a small sauce cup on a black plate
+556,dessert,1,90,90,simple,top,medium,t,,A large cookie decorated with an inscription
+557,burger,3plus,100,80,medium,side,medium,,cropped at edge,Chicken sandwich and fries beside two drinks
+558,grill,3plus,100,60,complex,side,medium,,cropped at edge,Sliced steak with a drink dessert and deviled eggs behind
+559,other,1,10,10,simple,angled,dark,tq,no food container visible,A lit object marked Fly with no prepared dish visible
+560,pizza,2,100,60,simple,side,medium,,cropped at edge,Calzone halves and a white dipping cup on a board
+561,grill,2,100,60,medium,side,medium,,cropped at edge,Skewers on a hot platter with a separate rice bowl
+562,other,1,90,90,simple,top,medium,tq,,A labeled package of raw ground meat
+563,other,1,100,100,simple,angled,medium,,cropped at edge,Stuffed vine leaves with lemon on a white plate
+564,pizza,3plus,70,50,complex,top,medium,t,cropped at edge,Two pizzas and a plated slice with printed sauce packets
+565,burger,1,100,100,medium,side,bright,,cropped at edge,A cut chicken and vegetable wrap
+566,pizza,2,100,100,medium,top,medium,,cropped at edge,Pizza in a box partly covered by a salad container
+567,other,1,100,90,medium,side,medium,,cropped at edge,Cheese cured meats olives and toast on a wooden board
+568,burger,3plus,100,90,complex,angled,medium,,cropped at edge,Tacos rice and beans on a plate with drinks nearby
+569,fried,3plus,100,90,medium,angled,bright,,cropped at edge,Fried fish with two sauce cups and a plate behind
+570,burger,1,100,100,complex,top,medium,t,,A platter of sandwiches chips and pickles with restaurant text
+571,grill,3plus,100,60,complex,side,medium,,cropped at edge,Chicken wings dip and a salad on separate dishes
+572,salad,3plus,100,90,complex,angled,dark,t,cropped at edge,Lettuce wraps vegetables and minced filling with printed table paper
+573,other,2,100,100,medium,top,bright,,cropped at edge,Fried eggs over diced potatoes and vegetables beside water
+574,dessert,1,100,80,simple,angled,bright,,cropped at edge,A cheesecake slice on a large white plate
+575,dessert,1,80,90,simple,angled,bright,t,,A cupcake with a printed card on a clear plate
+576,burger,2,100,80,medium,angled,medium,t,cropped at edge,A croissant sandwich on a plate with labeled sauce behind
+577,fried,3plus,90,90,medium,angled,medium,,,Breaded fish with vegetables potatoes and two side bowls
+578,grill,1,100,80,simple,side,bright,,cropped at edge,A cut stuffed meat portion on a white plate
+579,fried,1,100,90,medium,side,dark,,cropped at edge,Fried chicken greens and orange mash on a white plate
+580,burger,1,100,100,simple,side,medium,,cropped at edge,A tall corned beef sandwich with a pickle on a square plate
+581,burger,1,100,100,medium,angled,medium,p,cropped at edge,Burrito halves on a black plate in a kitchen
+582,fried,3plus,100,60,complex,side,dark,,cropped at edge,Fried chicken and sides on several white plates
+583,grill,1,90,80,medium,top,medium,,,Grilled meats with lemon in a checkered paper-lined basket
+584,burger,2,100,100,medium,side,medium,,cropped at edge,Stacked toasted burgers and fries with a second plate behind
+585,rice,3plus,40,50,complex,top,medium,,main dish ambiguous,Rice bowls and three drinks on a round patio table
+586,dessert,2,100,70,medium,angled,medium,,cropped at edge,A strawberry-topped crepe on a white plate beside a drink
+587,burger,2,70,80,medium,angled,bright,,,Egg sandwich and salad on a long plate beside iced tea
+588,dessert,3plus,40,50,complex,angled,medium,,,Chocolate fondue marshmallows and sauces on a black tray
+589,other,3plus,100,80,complex,angled,medium,,cropped at edge,Oysters lemon and two sauce cups on a platter
+590,fried,1,100,50,simple,side,bright,t,cropped at edge,Glazed fried chicken on a branded promotional photograph
+591,dessert,1,100,100,simple,top,bright,,cropped at edge,Pancakes topped with butter on a white plate
+592,burger,1,100,100,simple,side,bright,t,cropped at edge,A bacon cheeseburger with a restaurant logo overlay
+593,other,3plus,90,80,complex,angled,medium,,cropped at edge,Mussels in a black pot with other dishes and drinks behind
+594,burger,2,100,90,medium,angled,bright,t,cropped at edge,Sandwich halves and a cookie on branded paper
+595,rice,3plus,60,50,complex,angled,medium,,,Seafood rice on a white plate with drinks and side bowls
+596,noodle,1,100,90,complex,angled,bright,,cropped at edge,Stir-fried noodles with carved carrot garnish
+597,pizza,1,100,100,medium,angled,medium,,cropped at edge,Mushroom flatbread pizza on a wooden paddle
+598,salad,3plus,100,90,complex,side,medium,,cropped at edge,A large salad plate beside baked onion soup and a sauce cup
+599,pizza,1,40,70,simple,side,bright,,,Pizza in a cone held upright in a metal stand
+600,fried,2,100,90,medium,angled,bright,,cropped at edge,Breaded cutlets with melted cheese and tomato sauce beside salad
+601,pizza,3plus,100,80,complex,top,medium,,cropped at edge,Flatbread pizza with salad and two other dishes on a wooden table
+602,grill,1,80,80,medium,angled,bright,,,Seared scallops and vegetables on a large white plate
+603,burger,1,100,100,medium,side,bright,,cropped at edge,A steak and cheese sandwich with fries
+604,grill,3plus,100,40,simple,side,medium,,cropped at edge,Steak asparagus and mash on a white plate beside two drinks
+605,grill,3plus,60,30,complex,angled,medium,t,,Fish and several small side bowls on a printed menu
+606,pizza,1,100,100,medium,top,medium,t,cropped at edge,Pepperoni pizza in a branded cardboard box
+607,fried,2,100,90,complex,angled,medium,t,,Loaded nachos on a white platter beside branded beer
+608,noodle,3plus,40,90,complex,top,medium,,cropped at edge,Pasta steak and a small side bowl on a table
+609,fried,1,100,70,simple,side,bright,,cropped at edge,Two fried rice balls with sauce on a white plate
+610,dessert,1,80,90,medium,side,bright,t,,Rolled ice cream and wafers in a branded cup
+611,rice,3plus,100,70,medium,side,dark,,cropped at edge,Sushi rolls on a plate under blue lighting with drinks behind
+612,rice,1,100,90,complex,angled,medium,p,cropped at edge,Assorted sushi and sashimi on a large wooden boat
+613,salad,1,80,70,complex,angled,bright,,,Chicken egg and tomato salad on a white oval plate
+614,pizza,1,100,100,medium,top,medium,,,Ham and pineapple pizza on a round pan
+615,noodle,2,100,100,medium,angled,medium,,cropped at edge,Creamy pasta with bacon on a white plate beside water
+616,burger,1,90,80,medium,angled,medium,,,Burger and fries in a divided black takeaway tray
+617,dessert,3plus,70,20,complex,angled,medium,t,main dish ambiguous,Pastries on multiple trays in a shop display case
+618,burger,1,60,50,medium,side,medium,p,no food container visible,A person holding a bacon burger
+619,grill,3plus,100,50,medium,side,medium,,cropped at edge,Braised meat mash and green beans with another dish behind
+620,fried,1,100,90,medium,side,medium,,cropped at edge,Three fried balls and vegetables on a long white plate
+621,fried,1,40,70,simple,side,bright,t,,Curly fries in a branded paper carton
+622,burger,2,70,40,medium,side,medium,p,,Small burgers and a separate bowl of fries with a bartender behind
+623,rice,1,70,40,simple,side,dark,p,cropped at edge,Rice lifted from a black bowl with fingers at the frame edge
+624,dessert,1,100,100,medium,angled,bright,,cropped at edge,Cheesecake meringue and berries on a white plate
+625,grill,3plus,80,60,medium,side,bright,,,Grilled chicken mushrooms and pasta with soup and toast behind
+626,grill,2,100,100,medium,angled,bright,,cropped at edge,Steak fries asparagus and a sauce cup on a white plate
+627,rice,3plus,90,90,complex,top,medium,,cropped at edge,Rice tortillas beans and dip with chips and salsa behind
+628,rice,3plus,100,100,complex,angled,bright,p,cropped at edge,Rice grilled meat and vegetables with a diner at the edge
+629,burger,2,70,40,simple,side,medium,,,Beetroot toast on a square plate beside red wine
+630,burger,3plus,100,70,medium,side,medium,t,cropped at edge,Ham sandwiches with printed packaging and a drink behind
+631,rice,1,100,100,medium,angled,medium,,cropped at edge,Sushi rolls with fish and avocado on a long white platter
+632,other,1,70,50,medium,top,bright,q,,Raw chilies garlic turmeric and citrus arranged on a plate
+633,fried,1,70,80,simple,top,medium,,,A cut fried cheese ball on a white plate
+634,grill,3plus,100,100,complex,side,medium,,cropped at edge,Stacked ribs with fries salad and another side dish
+635,other,2,100,90,medium,top,bright,t,cropped at edge,Breakfast foods in takeaway trays on branded paper
+636,dessert,1,100,100,simple,top,bright,,cropped at edge,Powdered French toast triangles on a white plate
+637,grill,1,100,90,medium,side,bright,,cropped at edge,Chicken and vegetables with decorative sauce on a white plate
+638,burger,3plus,100,50,medium,side,medium,,cropped at edge,Open toast with egg cheese and greens beside drinks
+639,burger,1,100,100,medium,angled,bright,,cropped at edge,A savory pastry opened to show meat filling
+640,fried,3plus,20,30,complex,side,bright,pt,main dish ambiguous,Restaurant staff holding beer and fried food in branded clothing
+641,burger,1,80,50,simple,side,bright,t,,Pulled beef sandwich on a small board with a watermark
+642,dessert,2,100,100,simple,top,medium,t,cropped at edge,Pancake with powdered sugar and a branded syrup cup
+643,fried,1,90,100,simple,top,medium,,,Fries with tomato sauce and melted cheese in a foil tray
+644,fried,2,100,90,complex,top,medium,p,,A person holding a plate of loaded nachos
+645,dessert,2,100,90,simple,angled,bright,p,cropped at edge,Chocolate-chip pancake with cream and a hand under the plate
+646,other,1,10,10,simple,side,medium,q,no food container visible,Empty stacked dishes beside an empty blue glass
+647,fried,1,90,90,medium,angled,medium,p,,Loaded fries in a patterned bowl with a diner behind
+648,grill,3plus,60,70,complex,top,medium,,cropped at edge,Two plates of chicken and fish with sauce and a drink
+649,rice,1,80,90,complex,top,medium,,,Bibimbap with egg and seaweed in a stone bowl
+650,burger,2,100,100,medium,side,bright,,cropped at edge,Chicken wrap halves and fries beside a drink
+651,dessert,2,70,80,simple,side,bright,t,cropped at edge,Cake and a plated slice in a branded advertisement
+652,burger,1,100,90,medium,side,medium,,cropped at edge,Toasted club sandwich and fries on a white plate
+653,grill,1,100,100,medium,side,bright,,cropped at edge,Seafood toast lemon and creamy sauce in a white bowl
+654,other,1,100,60,simple,side,bright,t,cropped at edge,Bread rolls on a white plate with a restaurant logo overlay
+655,grill,1,100,70,medium,side,dark,t,cropped at edge,Roast poultry on a spit with a photographer watermark
+656,rice,1,80,30,simple,side,bright,pt,,Hands holding a rice and meat tray in front of a sign
+657,other,1,90,90,simple,angled,bright,,cropped at edge,A filled egg shell in an egg cup on a saucer
+658,dessert,1,40,50,simple,side,bright,p,no food container visible,A hand holding a small chocolate-coated dessert
+659,noodle,1,100,100,medium,angled,bright,,cropped at edge,Pasta with a meat portion and jalapeno on a white plate
+660,burger,3plus,100,60,medium,side,bright,pt,cropped at edge,A burger on printed paper with people holding other burgers behind
+661,other,1,100,100,complex,top,medium,q,,Raw shrimp piled in a metal container
+662,burger,2,100,70,medium,side,medium,,cropped at edge,Toasted sandwich halves with a pile of other sandwiches behind
+663,dessert,3plus,40,20,medium,top,bright,,main dish ambiguous,Cookies on several separate white platters
+664,fried,1,100,100,simple,side,medium,,cropped at edge,A stack of fried spring rolls in a bowl
+665,pizza,1,100,80,medium,angled,medium,p,cropped at edge,A hand lifting a slice from a topped pizza
+666,burger,1,100,100,complex,angled,medium,t,cropped at edge,Three burgers fries and fried bites with labeled sauces behind
+667,rice,1,100,100,complex,top,medium,,cropped at edge,Assorted sushi rolls and garnish on a large platter
+668,burger,1,100,100,medium,angled,bright,t,cropped at edge,Eggs Benedict with ham on a branded white plate
+669,grill,1,100,70,medium,side,medium,,cropped at edge,Steak rice and broccoli in a white oval bowl
+670,other,3plus,100,50,complex,angled,medium,pt,cropped at edge,Cheese grapes bread and a side bowl with a menu and diner behind
+671,fried,1,100,100,complex,side,bright,,cropped at edge,Loaded colored nachos on a long white plate
+672,fried,2,100,100,medium,angled,medium,t,cropped at edge,Fried chicken and powdered pastries on branded paper
+673,fried,3plus,60,40,complex,side,dark,pt,main dish ambiguous,Fried food trays and water glasses with a hand and printed liners
+674,other,1,100,100,medium,angled,bright,,cropped at edge,An omelette opened to show vegetables beside hash browns
+675,pizza,1,100,100,simple,angled,medium,,cropped at edge,A large plain cheese pizza on a board
+676,other,1,100,100,simple,top,medium,,cropped at edge,Small corn pieces with white coating in a clear bag
+677,salad,1,90,80,complex,angled,medium,,cropped at edge,Chopped green salad with tomato cucumber and croutons
+678,dessert,1,70,80,simple,angled,medium,,,A whole chocolate cake with drizzled icing on a clear platter
+679,pizza,1,90,40,simple,side,bright,,cropped at edge,A calzone on a white plate
+680,salad,2,100,90,complex,angled,medium,t,cropped at edge,Taco salad in a tortilla bowl with a branded cup behind
+681,burger,3plus,30,20,complex,top,bright,,main dish ambiguous,Sandwich salad soup and snacks spread across a pale background
+682,burger,1,100,90,complex,side,bright,,cropped at edge,A breakfast burrito cut open with potatoes egg and sauce
+683,noodle,3plus,60,30,complex,angled,medium,p,,Pasta sides and several drinks on a crowded table
+684,dessert,3plus,70,90,medium,angled,medium,,,Fruit-topped French toast with other breakfast plates behind
+685,other,2,100,90,medium,angled,bright,,cropped at edge,Spinach pastry and a small dip bowl on a paper-lined tray
+686,grill,2,100,90,simple,top,medium,pt,cropped at edge,Sliced brisket and sauce in a black takeaway box
+687,fried,3plus,60,50,medium,angled,dark,pt,cropped at edge,Chips salsa and a labeled beer bottle with a diner behind
+688,pizza,2,100,80,medium,angled,medium,,cropped at edge,Pizza on a plate with a drink behind
+689,rice,1,100,100,medium,angled,bright,t,cropped at edge,Shrimp broccoli rice and lettuce on a plate with a watermark
+690,other,2,100,50,simple,side,medium,,cropped at edge,Biscuits and gravy with coffee behind
+691,grill,3plus,40,60,complex,top,dark,,main dish ambiguous; cropped at edge,Several plates of steak burger fries and vegetables
+692,burger,3plus,100,80,medium,angled,medium,t,cropped at edge,Burger fries and dip in a basket beside a labeled soda bottle
+693,noodle,3plus,70,90,medium,top,medium,,cropped at edge,Noodles and vegetables in a takeaway box with sauce and fries
+694,drink,3plus,30,50,simple,top,medium,t,,Cocktails water and coffee on a printed menu
+695,burger,1,100,100,simple,side,medium,t,cropped at edge,Fried chicken sandwich on printed serving paper
+696,burger,3plus,100,80,complex,side,dark,,cropped at edge,Sauced burger with a separate fries basket and a salad behind
+697,rice,2,100,80,medium,angled,medium,,cropped at edge,Chicken rice cucumber and red sauce on a white plate
+698,other,2,80,50,complex,top,medium,pt,,Sashimi on a wooden boat with a drink and diner behind
+699,dessert,1,100,80,simple,side,medium,t,cropped at edge,Pistachio pastries with a text caption
+700,other,1,100,80,medium,side,medium,t,cropped at edge,Baked oysters and bread on a decorated serving plate
+701,burger,1,100,90,medium,side,bright,,cropped at edge,A filled bagel with sprouts and salad on a white plate
+702,salad,3plus,100,80,complex,side,bright,,cropped at edge,Chicken and olive salad with drinks behind
+703,fried,3plus,70,40,simple,side,medium,t,,Fried chicken and two sauce cups with branded condiments behind
+704,dessert,1,90,70,medium,angled,medium,,,Assorted doughnuts in an open foam box
+705,burger,3plus,70,50,complex,top,medium,,cropped at edge,Sandwich fries two salads and beer on a table
+706,grill,3plus,90,40,complex,side,medium,p,,Fish vegetables and mash with side dishes and a person behind
+707,noodle,3plus,60,60,complex,angled,medium,pt,cropped at edge,Noodle soup with several dishes and printed wrappers
+708,fried,3plus,90,80,medium,angled,bright,t,,Chicken wings with dip and a restaurant watermark
+709,burger,1,100,70,simple,side,medium,t,cropped at edge,A cut meat sandwich with a yellow printed menu behind
+710,other,3plus,90,80,complex,top,medium,p,,Stir-fried seafood and mushrooms in a wooden bowl with drinks and a hand
+711,fried,3plus,80,80,simple,side,medium,t,,Onion rings stacked on a stand with two dips on a gray plate
+712,dessert,3plus,100,70,simple,angled,bright,,cropped at edge,Powdered croissants on a rectangular plate beside drinks
+713,burger,1,100,60,simple,side,bright,t,cropped at edge,Wrap halves and a pickle on printed serving paper
+714,burger,1,100,100,medium,angled,medium,t,cropped at edge,Meat sandwich halves and potato chips on branded paper
+715,dessert,2,100,70,medium,side,medium,,cropped at edge,Assorted doughnuts on a white plate beside coffee
+716,salad,2,50,100,complex,top,bright,,main dish ambiguous; cropped at edge,Two bowls of leafy salads
+717,grill,1,90,80,medium,angled,dark,,,Grilled skewers with greens and pickled onions in a shallow bowl
+718,burger,1,100,100,simple,angled,medium,,cropped at edge,Bacon and cheese hot dog in a foam takeaway container
+719,noodle,3plus,50,50,complex,top,medium,t,main dish ambiguous,Noodle soup spring rolls grilled meat and garnish with printed packets
+720,other,1,100,100,medium,angled,medium,,cropped at edge,Chicken and vegetables in red sauce on a square plate
+721,other,1,80,80,complex,top,medium,t,cropped at edge,Rice-paper rolls and skewers in a basket with a logo overlay
+722,pizza,2,100,100,complex,top,medium,,cropped at edge,Flatbread pizza with greens and ham beside a drink
+723,burger,1,100,80,simple,angled,medium,,cropped at edge,Cheese-covered sandwich and chips in a black takeaway tray
+724,dessert,1,50,60,simple,angled,medium,t,,Lavender ice cream in a glass with a text overlay
+725,burger,1,100,100,medium,side,medium,,cropped at edge,A sauced fried fish taco with pickled onion
+726,burger,3plus,100,90,complex,angled,medium,,cropped at edge,A cheese-covered burrito with beans salad and a dip cup
+727,dessert,3plus,70,40,simple,side,medium,,,Cannoli on a small plate with other desserts behind
+728,noodle,1,100,100,medium,top,medium,,cropped at edge,Creamy pasta topped with shrimp and tomato
+729,grill,1,80,90,simple,top,bright,,,Salmon and onions in cream sauce on a round plate
+730,pizza,3plus,90,70,complex,angled,medium,,cropped at edge,Two pizzas and two salads on separate dishes
+731,burger,1,100,90,simple,side,dark,,cropped at edge,A bacon cheeseburger on a black slate plate
+732,burger,2,90,50,medium,angled,bright,,,Three tacos and a small dip bowl on a rectangular plate
+733,burger,1,70,80,medium,angled,bright,p,no food container visible,A hand holding a tall sandwich outdoors
+734,other,3plus,50,40,complex,angled,medium,t,cropped at edge,Breakfast plates soup and drinks on a patio table
+735,other,3plus,80,40,simple,angled,dark,,cropped at edge,An omelette and breakfast dishes beside drinks
+736,other,2,70,90,medium,top,bright,,cropped at edge,A creamy egg dish with a separate bowl of grits
+737,burger,1,90,90,medium,angled,medium,,cropped at edge,A cheese-covered taco and lime in a small white bowl
+738,grill,3plus,40,30,complex,angled,medium,t,main dish ambiguous,Several buffet trays with handwritten food labels
+739,grill,1,100,40,simple,side,medium,,cropped at edge,A steak medallion with butter on a white plate
+740,grill,3plus,80,80,medium,angled,dark,t,cropped at edge,Ribs mash and drinks with a printed placemat
+741,grill,2,90,50,medium,side,medium,,,Steak with creamy sauce and potatoes beside beer
+742,fried,1,100,90,simple,top,medium,,cropped at edge,Curly fries wrapped in plain white paper
+743,burger,3plus,80,60,medium,side,dark,,,Sandwich halves and dip on a board beside a drink
+744,dessert,3plus,100,50,simple,side,bright,t,cropped at edge,Chocolate-chip cookies beside a sugar bowl and labeled cup
+745,noodle,1,90,70,medium,angled,dark,p,,Pasta with meat and vegetables in a black bowl with a diner behind
+746,burger,3plus,100,80,medium,side,medium,,cropped at edge,Cheeseburger fries and sauce with another burger plate behind
+747,other,1,100,90,simple,angled,medium,,cropped at edge,A small portion of raw fish with onions on a black slate plate
+748,dessert,2,40,50,simple,side,medium,p,no food container visible,Hands holding two ice cream bars against a painted wall
+749,burger,2,100,90,medium,angled,bright,t,cropped at edge,A cut burrito on branded paper beside a printed cup
+750,other,3plus,100,60,complex,side,bright,,cropped at edge,Falafel vine leaves vegetables and dips on a white platter
+751,other,1,100,90,simple,side,bright,,cropped at edge,Stuffed red peppers with cheese on a white plate
+752,soup,1,90,100,medium,angled,bright,t,,Soup topped with rice and toast beside a printed menu
+753,grill,2,100,80,simple,angled,medium,,cropped at edge,A scallop and vegetables on a large white plate with wine behind
+754,burger,2,100,80,simple,side,medium,,cropped at edge,A glazed burger and chips on a metal tray with dip
+755,fried,3plus,80,80,medium,angled,medium,,cropped at edge,Fried onion blossom and dip beside a takeaway drink
+756,rice,1,100,100,simple,angled,bright,,cropped at edge,Sticky rice and dark filling on a leaf wrapper
+757,dessert,1,80,60,simple,side,medium,,,Small filled pastries on a wooden platter
+758,other,3plus,60,70,complex,side,medium,,cropped at edge,Chickpea curry in a copper bowl with other dishes behind
+759,burger,1,90,90,simple,angled,medium,,,A cheeseburger and pickles on a round black plate
+760,grill,2,100,70,simple,angled,medium,,cropped at edge,Seared scallops and grains with wine behind
+761,fried,3plus,90,90,medium,top,medium,,cropped at edge,Chicken strips on a waffle with dip and coffee
+762,dessert,1,60,100,simple,side,medium,,cropped at edge,A small floral cake with a pink flower decoration
+763,noodle,1,100,60,simple,side,bright,,cropped at edge,Spaghetti and meatballs in a white bowl
+764,dessert,1,100,90,simple,side,medium,t,cropped at edge,Powdered fried pastries on a plate with a menu behind
+765,burger,3plus,100,60,complex,side,medium,,cropped at edge,Small burgers with chips vegetables and beer
+766,other,1,10,10,complex,angled,medium,tq,no food container visible,Empty cooking pots on a stove with a photographer watermark
+767,burger,2,90,70,medium,side,medium,,cropped at edge,Sandwich halves on a small platter with another plate behind
+768,burger,1,100,70,simple,side,dark,,cropped at edge,Three pretzel sandwiches on a black cooling rack
+769,burger,3plus,80,50,complex,top,medium,,,Small burgers on a wooden board with salad and two snacks
+770,rice,2,100,90,complex,top,medium,,cropped at edge,Rice chicken vegetables and a green dip in a clear takeaway tray
+771,burger,2,100,50,medium,side,bright,t,container boundary unclear,Burger fried potatoes and a red drink with a brand logo
+772,grill,1,100,100,medium,top,bright,,cropped at edge,Grilled fish asparagus and rice on a white plate
+773,dessert,1,100,90,simple,angled,medium,,cropped at edge,Cake and ice cream on a patterned plate
+774,other,1,100,90,medium,angled,medium,,cropped at edge,A filled omelette and shrimp with creamy sauce
+775,dessert,2,100,90,medium,angled,bright,t,,Two frozen dessert cups with branded lettering
+776,grill,1,70,90,medium,top,bright,,,Fish potatoes and mixed vegetables on a white plate
+777,grill,1,100,90,medium,angled,dark,,cropped at edge,Fried tofu and grilled vegetable skewers on a square plate
+778,burger,2,80,90,complex,side,medium,p,no food container visible,A hand holding a large sushi-style rice wrap with a drink behind
+779,other,1,100,60,medium,top,bright,,,Cheese ham toast and pickles on a wooden board
+780,noodle,2,40,40,complex,top,medium,,main dish ambiguous,Two noodle stews in black pans on a table
+781,other,3plus,50,60,complex,top,medium,,cropped at edge,Cheese fondue in a metal pot with bread vegetables and fruit bowls
+782,dessert,1,60,90,simple,side,medium,pt,,Ice cream in a branded cup with people behind
+783,burger,3plus,50,40,medium,side,bright,t,,Roast beef burger salad and a drink with branded packaging
+784,rice,1,100,80,complex,angled,medium,t,cropped at edge,Rice fish and seaweed in a labeled clear takeaway box
+785,burger,2,100,90,simple,side,medium,t,cropped at edge,Two roast beef sandwiches with a brand watermark
+786,grill,3plus,70,60,complex,top,medium,,cropped at edge,Several grilled meat platters with sauce cups
+787,dessert,1,90,70,medium,side,medium,p,no food container visible,A hand holding a colorful ice cream sandwich
+788,dessert,1,100,60,medium,side,bright,,cropped at edge,Pancakes eggs bacon and hash browns on a breakfast plate
+789,soup,1,100,100,simple,angled,bright,,cropped at edge,Orange soup with cheese and herbs in a white bowl
+790,dessert,1,90,90,simple,angled,medium,t,cropped at edge,Pistachio-coated sweets on a slate board with a text caption
+791,other,3plus,100,50,medium,side,medium,,cropped at edge,Savory tart and greens on a patterned plate beside drinks
+792,pizza,1,100,80,simple,side,medium,p,cropped at edge,A hand lifting a pepperoni pizza slice with cheese stretching
+793,salad,1,100,90,medium,angled,bright,,cropped at edge,Lettuce wedges with creamy dressing on a white plate
+794,burger,1,100,90,simple,side,medium,,cropped at edge,Toasted meat sandwich halves and a pickle on a white plate
+795,grill,3plus,20,20,complex,top,medium,pt,main dish ambiguous,People beside a spread of meat and many small side cups
+796,burger,1,100,50,simple,top,medium,,cropped at edge,Chopped meat sandwich on white paper
+797,burger,2,60,50,simple,side,bright,p,no food container visible,Hands holding two toasted sandwich halves
+798,dessert,1,100,100,medium,angled,bright,,cropped at edge,Cheesecake with chocolate icing berries and sauce
+799,rice,3plus,100,90,simple,angled,medium,,cropped at edge,Dark rice mound and vegetable strands on a white plate
+800,soup,1,90,90,simple,top,medium,t,,Bean chili in a white bowl with a brand logo
+801,dessert,1,30,60,simple,side,medium,p,no food container visible,A hand holding a two-scoop ice cream cone
+802,other,1,100,80,simple,side,medium,p,cropped at edge,A hand dipping a chip into creamy cheese dip
+803,pizza,3plus,80,60,medium,angled,bright,,cropped at edge,Pepperoni pizza and a plate of wings with dip
+804,fried,2,100,100,medium,top,bright,,cropped at edge,Fried seafood fries and a sauce cup on a white plate
+805,dessert,3plus,100,80,simple,angled,bright,,cropped at edge,Powdered pastries beside coffee and water
+806,other,1,80,90,complex,top,medium,,cropped at edge,Lobster and other boiled seafood in a metal bowl
+807,burger,3plus,100,80,medium,side,bright,,cropped at edge,Poached eggs over fried cakes with drinks behind
+808,burger,1,90,90,medium,top,bright,,,A sauced burrito with rice and salad on a round plate
+809,grill,3plus,60,40,complex,side,medium,t,,Beef stew rolls mash and gravy in branded takeaway containers
+810,grill,1,100,100,simple,angled,dark,,cropped at edge,A small seared portion and sauce dots on a large black plate
+811,burger,3plus,70,50,complex,side,medium,p,cropped at edge,Fried chicken biscuit sandwich with a second plate and drinks
+812,grill,1,100,70,medium,side,dark,t,cropped at edge,Glazed roast meat vegetables and baked potato with menus behind
+813,other,1,100,90,medium,angled,medium,,cropped at edge,Cooked crab legs butter and bread on a metal platter
+814,soup,3plus,50,60,complex,top,medium,,cropped at edge,Rice stew fried fish and bread on separate plates
+815,grill,3plus,90,50,simple,angled,medium,,cropped at edge,A small steak portion on a plate beside wine and water
+816,other,1,90,80,simple,angled,medium,q,,A wrapped package with the food hidden
+817,burger,1,100,90,simple,angled,medium,,cropped at edge,Croissant sandwich and potato wedges in a lined basket
+818,grill,2,100,80,simple,angled,medium,,cropped at edge,Steak and lobster on a white plate beside water
+819,other,3plus,100,80,complex,angled,medium,p,cropped at edge,Roasted vegetables corn and potatoes in several black pans
+820,fried,1,100,90,medium,angled,bright,,cropped at edge,Fried croquettes salad and hummus on a long white plate
+821,salad,2,50,60,complex,top,bright,,main dish ambiguous,Two square plates of salad on a round green table
+822,burger,2,100,90,complex,angled,bright,,cropped at edge,Sauced burritos rice beans and greens beside a drink
+823,fried,3plus,70,50,complex,angled,medium,p,,A person holding a tray of tacos wings and side cups
+824,fried,2,100,100,medium,angled,bright,,cropped at edge,Fried calamari with a creamy sauce cup
+825,grill,1,90,90,medium,angled,medium,,,Seared meat and potatoes on a square plate
+826,grill,2,100,90,medium,side,bright,,cropped at edge,Steak topped with eggs and potatoes with pancakes behind
+827,noodle,1,100,90,medium,angled,medium,,cropped at edge,Macaroni and pulled meat in a foam takeaway box
+828,salad,2,60,80,medium,top,bright,,,Shrimp fruit and vegetables with a dressing cup in a square bowl
+829,fried,1,70,80,simple,top,medium,,,Fried shrimp and lemon in a foil-lined tray
+830,fried,2,100,80,simple,side,bright,t,cropped at edge,Curly and straight fries in cartons on branded paper
+831,pizza,3plus,100,80,medium,angled,medium,t,cropped at edge,Topped pizza on a paddle beside drinks and a printed packet
+832,dessert,1,90,80,simple,side,medium,t,,Wrapped oatmeal bars displayed with a handwritten price sign
+833,rice,2,100,100,complex,angled,medium,,cropped at edge,Rice beans grilled meat and peppers on a metal platter
+834,grill,2,100,90,medium,top,medium,,cropped at edge,Grilled chicken rice and broccoli with a salad partly visible
+835,burger,2,70,80,medium,side,medium,,,A fried chicken burger on a metal tray with another snack behind
+836,burger,1,100,90,medium,side,bright,,cropped at edge,Beef and avocado wrap halves on a wooden board
+837,grill,1,100,90,medium,angled,medium,,cropped at edge,Barbecue meats bread and pickles on a metal tray
+838,grill,2,100,70,complex,angled,dark,q,cropped at edge,Meat and rice dishes in very dark purple lighting
+839,fried,1,100,100,complex,angled,bright,,cropped at edge,Loaded nachos with fried eggs jalapenos and cream
+840,other,1,100,100,simple,top,bright,tq,,Whole mangoes with a produce sticker and no prepared dish
+841,burger,3plus,80,60,complex,top,medium,p,cropped at edge,A burger fries ketchup and fried sides on a board with a diner
+842,dessert,1,100,100,simple,angled,medium,,cropped at edge,Chocolate-chip waffle on a white plate
+843,burger,3plus,50,40,complex,top,medium,,main dish ambiguous,Salad wraps corn and vegetables in separate takeaway containers
+844,fried,3plus,100,90,medium,side,bright,,cropped at edge,Filled falafel with hummus and other dishes behind
+845,burger,1,100,90,simple,side,bright,,cropped at edge,Smoked salmon and cream cheese bagel on a white plate
+846,burger,2,100,30,medium,side,bright,p,cropped at edge,People squeezing lemon over avocado toast beside a red drink
+847,fried,2,70,40,medium,side,bright,,,Breaded cutlet mash and vegetables on a plate beside iced tea
+848,fried,1,100,100,medium,angled,medium,,cropped at edge,Fried seafood pieces with shredded vegetables and red sauce
+849,burger,1,30,60,simple,side,bright,p,no food container visible,A hand holding a fried chicken sandwich
+850,burger,3plus,100,70,medium,angled,medium,t,cropped at edge,Toasted sandwich and chips beside drinks and branded condiments
+851,grill,2,100,70,simple,side,dark,,cropped at edge,Glazed ribs on a wooden board with another dish behind
+852,other,1,100,80,medium,angled,medium,,cropped at edge,Roasted Brussels sprouts and nuts in a red pan
+853,noodle,1,100,40,simple,side,medium,,cropped at edge,Noodles lifted above a white bowl with chopsticks
+854,burger,2,90,70,medium,side,bright,t,,Gyro wrap on paper beside a branded drink cup
+855,rice,3plus,60,60,complex,angled,bright,,cropped at edge,Rice bowl fruit and small sweet buns on a white table
+856,salad,1,90,80,complex,angled,medium,,,Falafel and vegetables with dressing in a white bowl
+857,dessert,2,70,50,medium,side,bright,,,Pancakes eggs bacon fruit and hash brown beside orange juice
+858,other,1,100,90,simple,angled,medium,,cropped at edge,Meatballs and white cheese in tomato sauce on a square plate
+859,fried,1,90,80,medium,angled,medium,,,Fried wontons with herbs and grated cheese in an oval bowl
+860,fried,3plus,100,90,medium,angled,bright,t,cropped at edge,Chips with three dips in a branded paper-lined basket
+861,fried,1,80,60,medium,angled,medium,,,Loaded fries in a metal bowl beside empty foam boxes
+862,burger,3plus,60,40,medium,side,medium,t,container boundary unclear,Bacon burger fries and soda with branded cups
+863,fried,3plus,100,60,complex,side,bright,t,cropped at edge,Mixed fried seafood fries and dips beside branded beer
+864,soup,1,100,100,medium,angled,bright,,cropped at edge,Hot and sour soup in a white bowl
+865,burger,1,100,90,simple,side,bright,,cropped at edge,A double bacon burger and fries
+866,burger,2,80,70,simple,side,bright,t,,Chili dog in a foam box beside branded drink and liner
+867,salad,1,90,60,complex,angled,bright,,,Green salad with cherry tomatoes in a white bowl
+868,dessert,1,90,90,medium,top,medium,p,no food container visible,A hand holding a decorated doughnut
+869,rice,3plus,100,80,medium,top,medium,,cropped at edge,Sushi rolls and nigiri on a wooden board beside drinks
+870,noodle,1,100,90,medium,angled,medium,t,,Ramen with pork and seaweed plus a restaurant logo and caption
+871,grill,2,100,90,medium,angled,bright,,cropped at edge,Cooked shrimp and kale garnish on a platter
+872,grill,3plus,100,80,simple,side,medium,,cropped at edge,A cut steak medallion with small side bowls behind
+873,noodle,1,100,90,complex,angled,medium,,cropped at edge,Pesto pasta and meat-topped lasagne on a white plate
+874,dessert,1,100,50,medium,side,bright,pt,cropped at edge,A person holding a branded doughnut box outdoors
+875,burger,1,90,60,simple,top,medium,t,,Cheese and spinach toast in a foam box with a watermark
+876,other,1,80,60,simple,angled,bright,,,Hummus with oil and an olive in a white bowl
+877,dessert,1,100,70,simple,angled,medium,t,cropped at edge,Two iced doughnuts in a branded box
+878,rice,1,100,90,medium,angled,medium,,cropped at edge,Fried sushi rolls and orange sauce on a square plate
+879,noodle,1,100,100,simple,angled,bright,,cropped at edge,Macaroni with cream and grated cheese in a bowl
+880,burger,1,100,90,medium,side,medium,t,cropped at edge,Three sliders on a platter with branded objects behind
+881,pizza,1,100,100,complex,angled,medium,t,cropped at edge,Pizza in a box with branded packaging and sauces
+882,pizza,1,100,90,simple,top,medium,t,cropped at edge,Tomato pizza on a branded liner
+883,fried,1,100,100,simple,top,medium,,cropped at edge,Breaded meat with cheese and tomato sauce in a white bowl
+884,other,1,100,80,medium,side,bright,p,cropped at edge,A hand holding a divided tray while sauced meat is served
+885,burger,1,100,100,simple,side,medium,,cropped at edge,Mushroom cheeseburger and fries on a white plate
+886,salad,3plus,60,20,complex,side,medium,pt,cropped at edge,Three diners at a table with drinks menus and a small vegetable bowl
+887,grill,3plus,100,90,medium,angled,medium,t,cropped at edge,Steak and grilled greens on a plate beside a menu and drinks
+888,salad,3plus,70,70,complex,angled,medium,t,,Chicken salad side bowl and dressing on a branded tray liner
+889,burger,3plus,100,80,medium,angled,medium,t,cropped at edge,Burger fries sauces and drink on a printed branded tray
+890,grill,1,90,100,medium,top,bright,,cropped at edge,Seared scallops and vegetables in a patterned bowl
+891,grill,1,90,80,medium,angled,medium,,,Cut stuffed chicken with rice and green beans on a white plate
+892,salad,1,80,70,medium,top,bright,,,Cucumber crouton and onion salad in a white bowl
+893,dessert,1,100,60,simple,side,medium,,cropped at edge,A baked dessert with ice cream on a gray plate
+894,noodle,3plus,100,60,medium,side,medium,t,cropped at edge,Ravioli with tomato sauce and a watermark beside wine and bread
+895,dessert,1,100,100,medium,angled,bright,t,cropped at edge,Waffle fruit and ice cream on a branded plate with a watermark
+896,other,3plus,50,40,complex,angled,bright,t,main dish ambiguous,Breakfast foods in serving dishes with printed labels
+897,grill,1,100,90,medium,angled,bright,,cropped at edge,Seasoned shrimp and sliced peppers on a white plate
+898,rice,1,60,70,complex,side,bright,,cropped at edge,A rice bowl topped with cheese cucumber tomato and onion
+899,rice,1,100,70,medium,angled,medium,,cropped at edge,Sushi rolls in an open takeaway box
+900,rice,3plus,80,50,medium,side,medium,t,,Sushi on a wooden boat beside a branded soy sauce bottle
+901,fried,1,70,60,complex,angled,medium,,,Loaded fries with sauce and herbs on a metal plate
+902,fried,2,100,50,medium,side,medium,t,cropped at edge,Fried chicken and fries in a branded basket beside a printed drink cup
+903,grill,1,100,100,simple,top,medium,t,cropped at edge,Seared scallops over vegetables with a photographer watermark
+904,burger,3plus,100,80,medium,angled,bright,t,cropped at edge,Small burgers fries and drink with branded wrappers and bag
+905,burger,1,100,90,simple,side,medium,t,cropped at edge,A turkey sandwich with a brand watermark
+906,salad,1,100,100,medium,angled,bright,t,cropped at edge,Dressing poured from a printed packet over chicken salad
+907,fried,3plus,100,60,medium,side,medium,pt,,Chicken wings dip and beer with branded liner and a person behind
+908,rice,1,80,90,complex,angled,bright,,cropped at edge,Rice glazed meat and vegetables in a white bowl
+909,rice,3plus,100,70,medium,angled,medium,,cropped at edge,Sushi and nigiri on several long white platters
+910,burger,3plus,80,50,medium,side,medium,pt,,Burger on a board with labeled drinks and a person in the distance
+911,salad,1,100,90,medium,angled,bright,,cropped at edge,Baked cheese over spinach salad with toast
+912,other,1,10,10,complex,side,bright,q,no food container visible,Decorative wall baskets and lamps with no food visible
+913,burger,1,100,70,simple,side,medium,p,no food container visible,A hand holding a fried chicken sandwich
+914,grill,1,100,90,simple,side,medium,,cropped at edge,Glazed roast meat with bones on a black slate plate
+915,grill,1,90,100,simple,top,bright,,,Three seared scallops and vegetables on an oval white plate
+916,pizza,1,100,100,complex,top,bright,,cropped at edge,Vegetable pizza with cheese and dark strips on a white plate
+917,burger,3plus,70,70,complex,top,medium,,,A sandwich rice fries and dipping sauce on a square plate
+918,soup,3plus,40,30,complex,top,bright,t,main dish ambiguous,Curry rice and bread with branded packaged meals
+919,dessert,3plus,100,90,medium,angled,bright,t,cropped at edge,Powdered fried dough in a basket with three dips and printed liner
+920,dessert,1,100,90,medium,side,medium,t,cropped at edge,Dessert topped with a branded chocolate bar
+921,noodle,1,100,100,medium,side,bright,,cropped at edge,Pasta with chicken bacon and peas in a white bowl
+922,salad,1,80,70,complex,side,bright,,cropped at edge,Chopped salad with shaved cheese and avocado in a white bowl
+923,dessert,3plus,60,50,medium,side,bright,,,Blue ice cream and raspberries in a white bowl with other bowls behind
+924,noodle,3plus,100,90,complex,top,bright,t,,Noodles in a decorated bowl with two drinks behind
+925,burger,2,100,50,complex,top,medium,,main dish ambiguous,Two trays of tacos with meat vegetables and slaw
+926,fried,3plus,60,60,medium,angled,dark,t,cropped at edge,Fries in two baskets with a dip cup and labeled wine bottle
+927,rice,1,100,90,medium,angled,medium,t,cropped at edge,Sushi rolls on a platter with a photographer watermark
+928,rice,1,100,80,medium,side,medium,,cropped at edge,Sushi with avocado and red roe along a white platter
+929,burger,3plus,70,50,complex,angled,medium,pt,main dish ambiguous,A chef making long sandwiches in a shop with menus
+930,burger,3plus,60,60,medium,angled,medium,t,,Cream-topped toast beside several drinks and branded packaging
+931,other,1,100,100,simple,top,dark,,cropped at edge,A small tartare portion and greens in a large brown bowl
+932,pizza,1,100,50,medium,side,bright,t,cropped at edge,Pizza on a white plate with a labeled bottle behind
+933,rice,3plus,100,70,complex,side,bright,,cropped at edge,Fish edamame and vegetables over rice with dishes behind
+934,grill,1,10,90,simple,side,bright,p,no food container visible,A hand holding a long meat skewer outdoors
+935,rice,2,100,100,complex,top,medium,,cropped at edge,Rice egg and shredded vegetables in a black bowl beside sauce
+936,pizza,1,100,100,medium,top,medium,t,cropped at edge,Sausage pizza in a printed box
+937,burger,1,100,90,medium,top,medium,,cropped at edge,Enchilada rice beans and avocado on an oval plate
+938,fried,1,70,60,medium,angled,medium,t,,Fried wings potatoes and salad with menus behind
+939,burger,2,100,60,simple,side,medium,,cropped at edge,Two filled sandwiches on wooden boards
+940,rice,1,100,90,simple,angled,medium,,cropped at edge,A single fish nigiri on a dark stone plate
+941,salad,1,100,90,complex,side,bright,,cropped at edge,Gyro meat salad and pita on a patterned plate
+942,rice,3plus,60,40,complex,angled,bright,t,cropped at edge,Rice meat chips and many branded dip cups
+943,dessert,1,90,90,simple,top,bright,,,Small colorful cupcakes arranged around a yellow plate
+944,pizza,1,100,70,medium,angled,medium,,cropped at edge,Long mushroom and cheese flatbread pizza on a white platter
+945,salad,3plus,50,60,complex,angled,medium,,main dish ambiguous,Salad ingredients in several containers at a buffet counter
+946,grill,1,100,80,simple,angled,dark,,,Sauced meat cauliflower and mash on a square plate
+947,noodle,1,100,90,complex,top,medium,,cropped at edge,Glass noodles cucumber chicken and carrots in a brown bowl
+948,rice,2,90,100,medium,top,medium,,cropped at edge,Biryani with grilled meat onion and a dressing cup
+949,other,1,10,10,complex,side,medium,q,no food container visible,Flower blossoms outdoors with no food visible
+950,pizza,1,90,60,medium,top,bright,,,Rectangular topped pizza on a metal tray
+951,burger,1,100,70,simple,angled,medium,,cropped at edge,Toasted sandwich halves and fries on a round plate
+952,other,3plus,90,40,medium,angled,medium,t,cropped at edge,Flatbread and dips on a platter with a printed menu behind
+953,pizza,1,80,40,simple,side,medium,t,cropped at edge,Pizza on an oven paddle with a faint photographer watermark
+954,burger,1,100,80,simple,side,medium,,cropped at edge,Bacon burger and fries on a black serving board
+955,dessert,1,100,100,simple,angled,bright,,cropped at edge,Savory rolled pastries on a baking tray
+956,rice,1,100,100,complex,top,bright,,cropped at edge,Rice beans grilled chicken and fried balls on a white plate
+957,grill,3plus,100,30,complex,angled,medium,pc,main dish ambiguous,A collage of seafood dishes and a street scene with people
+958,dessert,1,60,60,simple,angled,bright,,,Fried turnovers and ice cream on an oval plate
+959,other,3plus,80,30,simple,side,bright,,cropped at edge,Bread and olive dip on a metal plate beside water bottle and glass
+960,noodle,2,100,100,complex,top,medium,,cropped at edge,Rice noodles grilled meat spring rolls and a sauce bowl
+961,pizza,1,100,90,medium,angled,medium,,cropped at edge,Long mushroom and cheese flatbread on a white platter
+962,dessert,1,60,90,simple,side,medium,,,Three chocolate dinosaur shapes on a small display board
+963,fried,1,100,100,simple,angled,bright,t,cropped at edge,Potato wedges in a branded paper liner
+964,other,1,90,80,medium,angled,medium,,,Clams and vegetables in a white bowl
+965,grill,1,100,90,simple,side,dark,,cropped at edge,A sliced roast beef portion on a wooden board
+966,noodle,1,90,90,complex,angled,bright,,,Glass noodles with vegetables in a white oval plate
+967,grill,2,100,100,medium,top,bright,,,Grilled aubergine lettuce and a sauce bowl on a white plate
+968,burger,1,80,60,simple,angled,bright,,,A meat quesadilla and crisp tortilla piece on a white plate
+969,burger,1,70,70,simple,side,bright,t,,A fried chicken burger on lightly printed serving paper
+970,grill,3plus,100,70,medium,side,medium,,cropped at edge,Seared scallops over vegetables on a white plate with drinks behind
+971,fried,1,100,90,medium,top,bright,,,Breaded cutlet and shredded salad on a white plate
+972,other,2,70,60,simple,side,bright,,cropped at edge,Edamame in a patterned bowl with another bowl behind
+973,rice,1,100,100,medium,top,medium,,cropped at edge,Fried rice in a large black wok with a serving spoon
+974,pizza,1,100,100,complex,angled,medium,,cropped at edge,Pizza with mushrooms onion tomato and pineapple on a metal pan
+975,fried,3plus,60,30,complex,angled,dark,pt,cropped at edge,A diner behind fried food plates drinks and labeled condiments
+976,fried,1,40,80,simple,side,bright,t,,Seasoned fries in a white cup beside a labeled sauce bottle
+977,grill,1,100,100,medium,angled,bright,,cropped at edge,Seared salmon and vegetable strands on a white plate
+978,rice,1,60,70,medium,top,medium,t,,Rice chicken and vegetables in a bowl with a cafe logo
+979,burger,2,100,100,medium,top,bright,,cropped at edge,Two chicken tacos and a sauce lid on a white plate
+980,pizza,2,100,80,medium,side,medium,t,cropped at edge,Deep-dish pizza with a branded drink cup behind
+981,other,3plus,30,30,complex,angled,bright,t,main dish ambiguous,Bowls of olives vegetables and toppings with printed food labels
+982,burger,2,100,90,simple,side,bright,t,cropped at edge,Bacon cheeseburger fries and branded soda cup
+983,rice,3plus,100,70,medium,top,medium,,cropped at edge,Nigiri and sushi on a long plate with soy dip and another plate
+984,burger,1,100,70,simple,side,dark,,cropped at edge,Cheeseburger on a wooden board
+985,burger,1,90,50,medium,side,bright,,,Open bread sandwiches with salad and avocado on a tray
+986,dessert,3plus,20,20,complex,side,medium,pt,main dish ambiguous,A pastry chef beside several small desserts with a photographer watermark
+987,drink,2,30,80,medium,side,bright,pt,,A person eating a branded shake beside packaged fries
+988,drink,3plus,20,20,complex,top,bright,pt,main dish ambiguous,Hands preparing coffee beside cups a filter and printed reading material
+989,burger,1,100,60,simple,side,bright,,cropped at edge,Steak and cheese sandwich halves on an oval plate
+990,rice,1,100,100,medium,side,medium,t,cropped at edge,Sushi with red roe and a restaurant watermark
+991,rice,1,100,50,medium,angled,medium,,cropped at edge,Sushi rolls on a long black platter beside a flower vase
+992,pizza,1,90,70,medium,side,medium,,,Thin vegetable pizza on a raised metal stand
+993,fried,1,100,70,simple,side,medium,,cropped at edge,Fried croquettes in a green bowl
+994,rice,1,100,80,simple,side,medium,,cropped at edge,A white fish nigiri on a black plate
+995,rice,1,100,100,medium,top,medium,,cropped at edge,Rice and minced meat topped with chopped pickles and a fried piece
+996,dessert,1,60,90,simple,side,bright,t,,Layered frozen dessert in a branded clear cup
+997,grill,3plus,100,70,medium,side,bright,,cropped at edge,Sliced roast ham on a platter with two bowls of sides behind

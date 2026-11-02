@@ -1,0 +1,7 @@
+opencv-python
+numpy
+Pillow
+resmem        # pulls in torch 
+vitmem        # second memorability model; downloads its weights on first use
+pandas
+openpyxl

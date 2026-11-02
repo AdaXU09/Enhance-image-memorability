@@ -1,0 +1,7 @@
+{
+  "model": "ViTMem (Hagen & Espeseth 2023)",
+  "weights": "huggingface.co/brainpriority/vitmem/vitmem_base_patch16_224_miil_v1-f580d24a.pth",
+  "vitmem": "1.0.1",
+  "timm": "1.0.30",
+  "torch": "2.7.1+cu128"
+}

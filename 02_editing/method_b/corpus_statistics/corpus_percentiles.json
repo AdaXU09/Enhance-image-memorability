@@ -1,0 +1,36 @@
+{
+  "source": "food_photos.zip",
+  "source_fingerprint": "4fa48a0b34f3359b2f18613a3335cbf064a696d6e429d389167289778c639f8b",
+  "photographs_found": 108152,
+  "sample": null,
+  "n": 108047,
+  "unreadable": 105,
+  "computed": "2026-10-28T18:28:45",
+  "percentiles": {
+    "value": {
+      "P15": 119.7,
+      "P50": 158.4,
+      "P85": 198.2
+    },
+    "saturation": {
+      "P15": 64.1,
+      "P50": 102.4,
+      "P85": 145.0
+    },
+    "sharpness": {
+      "P15": 218.1,
+      "P50": 604.4,
+      "P85": 1487.3
+    }
+  },
+  "end_levels_on_median_photo": {
+    "value": {
+      "70%": 10,
+      "130%": 89
+    },
+    "saturation": {
+      "70%": 21,
+      "130%": 78
+    }
+  }
+}

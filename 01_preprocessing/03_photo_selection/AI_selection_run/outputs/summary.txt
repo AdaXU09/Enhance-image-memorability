@@ -1,0 +1,72 @@
+Photo selection summary
+Input: pool_final.csv; only the listed filenames were screened.
+Total image files found in pool: 1000
+Listed images screened: 997; unlisted files ignored: 3
+Ignored filenames: Cz02qqqaorQSmfYeXAXL_g.jpg, GQuNXs26cj7GSHkPilUceA.jpg, KsOuoOdplcduUEQQjFpWnQ.jpg
+Duplicate filenames: none; no renaming required.
+
+Resolution and file metadata
+Listed-image shorter side (px): max: 400, median: 400.0, min: 400, q25: 400.0, q75: 400.0
+Listed-image shorter-side bands: 330 to 450: 997, 450 to 600: 0, over 600: 0, under 330: 0
+Band boundaries: 330-450 inclusive; above 450 through 600 inclusive.
+Native width (px): max: 600, median: 533.0, min: 400, q25: 400.0, q75: 600.0
+Native height (px): max: 400, median: 400.0, min: 400, q25: 400.0, q75: 400.0
+File size (bytes): max: 299850, median: 39298.0, min: 11642, q25: 31694.0, q75: 48597.0
+Individual native dimensions, byte sizes and SHA-256 hashes are in metadata.csv.
+
+Visual screening and exclusion
+Every listed image was visually inspected. Width_frac and height_frac were estimated separately in increments of 10%, including the main container; arithmetic then rounded to the nearest 5% and clamped to 5-100%. The two estimates remain in visual_annotations.csv.
+Visible people/body parts, text/marks, collage and unusable quality were screened independently. These are visual judgments; tiny or faint marks may be uncertain.
+For suitability, non-food scenes, raw ingredient/preparation shots and meals hidden in packaging were treated as quality_ok=no; this interpretation of a usable restaurant-dish stimulus is stated in their notes.
+Excluded by has_person=yes: 126
+Excluded by has_text=yes: 284
+Excluded by is_collage=yes: 4
+Excluded by quality_ok=no: 20
+Excluded by near-identical duplicate: 1
+Excluded unique union (rules may overlap): 375
+Eligible candidates: 622
+No exclusions were based on resolution.
+Exact decoded-pixel duplicates: none. Perceptual-similarity candidates plus visually suspected repeats were compared; decisions are in duplicate_review.csv. Later index 961 repeats the dish/plate at index 944.
+Excluded scenes with no visible food container use n_dishes=1 solely as a required-schema placeholder; their notes explicitly state that no food container is visible.
+Categories use the fixed list; sushi is classified as rice and unlisted food types as other. The largest container defines the main dish.
+
+Framing groups
+Eligible candidates were sorted by main_dish_bbox_pct, then original manifest row order. Four rank groups differ in size by at most one. Tied percentages are split by manifest order, so ranges can overlap.
+Cut points (maximum value in Q1, Q2 and Q3): 60%, 80%, 100%
+Q1: ranks 1-156, candidates 156, bbox range 5-60%, selected 12
+Q2: ranks 157-312, candidates 156, bbox range 60-80%, selected 13
+Q3: ranks 313-467, candidates 155, bbox range 80-100%, selected 12
+Q4: ranks 468-622, candidates 155, bbox range 100-100%, selected 13
+These are rank-based quartiles, not four equally wide percentage intervals. Q4 contains only 100% estimates because of the large tie at that value.
+
+Selection method and selected counts
+Framing quotas are fixed at 12/13/12/13. Category quotas are distributed as evenly as candidate availability permits across the fixed list (maximum 5 in this selection). Remaining allocation feasibility is checked with exact category-to-framing maximum flow.
+Within those quotas, a deterministic greedy choice and quota-preserving swaps balance complexity and brightness; this is a heuristic rather than a global optimum guarantee. Multi-dish (3plus) count is capped at 15 throughout. Only equally balanced choices use native pixel count, then byte size, as tie-breaks. No attractiveness, memorability score, or signature-dish judgment was used.
+Selected total: 50
+Framing groups: Q1: 12, Q2: 13, Q3: 12, Q4: 13
+category: rice: 5, noodle: 5, burger: 5, pizza: 5, fried: 5, grill: 5, soup: 5, salad: 5, dessert: 4, drink: 2, other: 4
+n_dishes: 1: 28, 2: 8, 3plus: 14
+complexity: simple: 16, medium: 17, complex: 17
+angle: top: 13, angled: 24, side: 13
+brightness: dark: 16, medium: 17, bright: 17
+
+Selected-image resolution
+Shorter side (px): max: 400, median: 400.0, min: 400, q25: 400.0, q75: 400.0
+Shorter-side bands: 330 to 450: 50, 450 to 600: 0, over 600: 0, under 330: 0
+Native width (px): max: 600, median: 600.0, min: 400, q25: 600.0, q75: 600.0
+Native height (px): max: 400, median: 400.0, min: 400, q25: 400.0, q75: 400.0
+File size (bytes): max: 77845, median: 50993.0, min: 22084, q25: 36677.75, q75: 62410.0
+
+Output and integrity
+screening.csv: 997 rows; exact requested columns plus excluded_reason.
+selected.csv: 50 rows; exact base columns plus new_path.
+Paths in selected.csv are relative to AI_selection_run/.
+Numbered scripts record first-execution order; after visual QA corrections, scripts 05 and 06 were rerun to rebuild outputs. Final observations are saved in visual_annotations.csv; scripts 03 and the image-review sheets support the manual review rather than an automated vision classifier.
+50 originals copied byte-for-byte with unchanged filenames, format and resolution into selected/<category>/.
+SHA-256 verified all 997 source files and pool_final.csv unchanged, and all 50 copies identical to their sources.
+
+Warnings
+Any framing group contributes fewer than 8 of the 50: no
+The highest cut point is above 80: yes
+The lowest cut point is above 40: yes
+Fewer than 4 categories are represented: no

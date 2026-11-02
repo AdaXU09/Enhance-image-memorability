@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "screened": 997,
+  "excluded_unique": 375,
+  "eligible": 622,
+  "selected": 50,
+  "framing_groups": {
+    "Q1": 12,
+    "Q2": 13,
+    "Q3": 12,
+    "Q4": 13
+  },
+  "categories": {
+    "salad": 5,
+    "grill": 5,
+    "other": 4,
+    "drink": 2,
+    "soup": 5,
+    "burger": 5,
+    "fried": 5,
+    "rice": 5,
+    "dessert": 4,
+    "pizza": 5,
+    "noodle": 5
+  },
+  "threeplus": 14,
+  "exact_csv_columns": true,
+  "source_and_manifest_hashes_unchanged": true,
+  "copied_bytes_identical": true,
+  "native_resolution_and_format_preserved": true,
+  "selected_visual_qa_complete": true,
+  "temporary_review_images_removed": true
+}
