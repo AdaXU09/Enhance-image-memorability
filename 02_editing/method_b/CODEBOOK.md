@@ -32,5 +32,7 @@ tools, the best three B1 edits and the B2 edit (14 rows). Written by
 | `vitmem` | Predicted memorability by ViTMem (0–1), an independent model |
 | `d_vitmem` | Change in ViTMem: `vitmem` − ViTMem of the original |
 
+For B2, `brightness` `saturation` and `sharpness` are the settings the rule stopped at: where the image reached its target (85th or 15th percentile of food photographs), or where it hit the grid’s limit (e.g. 130% brightness, 70% saturation) or the 2% white-or-black check. Whether each target was reached is in the column `reached_value`, `reached_saturation` and `reached_sharpness`.
+
 The score of every B1 setting, not only the best three, is in
 `grid_scores.csv`.

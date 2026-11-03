@@ -1,4 +1,4 @@
-"""Select 20 development images from the AI-selected photographs.
+"""Select 20 development images from the manually checked photographs.
 
 Sort images by memorability score and divide them into three equal-sized
 groups: low, middle and high. Select 7, 7 and 6 images, respectively,
@@ -7,7 +7,8 @@ while balancing food categories, framing and scores.
 Usage:
     python pick_dev.py
 
-By default, inputs are read from the adjacent photo selection and prefilter
+By default, the selection list and images are read from 03_photo_selection/checked.
+Screening and memorability metadata come from the photo selection and prefilter
 folders. Override the three CSV paths as positional arguments if needed.
 
 Images and metadata are saved in results/ beside this script by default.
@@ -23,15 +24,16 @@ TARGET_N = 20
 SCRIPT_DIR = Path(__file__).resolve().parent
 PREPROCESSING_DIR = SCRIPT_DIR.parent
 SELECTION_OUTPUTS = PREPROCESSING_DIR / "03_photo_selection" / "AI_selection_run" / "outputs"
+CHECKED_DIR = PREPROCESSING_DIR / "03_photo_selection" / "checked"
 PREFILTER_RESULTS = PREPROCESSING_DIR / "02_prefilter" / "results"
 
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument("sel_csv", nargs="?", type=Path, default=SELECTION_OUTPUTS / "selected.csv")
+parser.add_argument("sel_csv", nargs="?", type=Path, default=CHECKED_DIR / "checked.csv")
 parser.add_argument("scr_csv", nargs="?", type=Path, default=SELECTION_OUTPUTS / "screening.csv")
 parser.add_argument("pool_csv", nargs="?", type=Path, default=PREFILTER_RESULTS / "pool_final.csv")
 parser.add_argument("--image-dir", type=Path,
-                    default=PREFILTER_RESULTS / "pool",
-                    help="Source image directory (default: 02_prefilter/results/pool)")
+                    default=CHECKED_DIR,
+                    help="Source image directory with category subfolders or flat images (default: 03_photo_selection/checked)")
 parser.add_argument("--output-dir", type=Path, default=SCRIPT_DIR / "results" / "development_photos",
                     help="Destination root; images go in category subfolders (default: results/development_photos beside this script)")
 args = parser.parse_args()
@@ -77,7 +79,12 @@ for third, k in quota.items():
 
 out = pd.DataFrame(chosen)[["filename", "category", "memory_score", "mem_third",
                             "framing", "main_dish_bbox_pct", "note"]]
-sources = [args.image_dir / filename for filename in out["filename"]]
+sources = []
+for filename, category in zip(out["filename"], out["category"]):
+    source = args.image_dir / category / filename
+    if not source.is_file():
+        source = args.image_dir / filename
+    sources.append(source)
 missing = [str(source) for source in sources if not source.is_file()]
 if missing:
     raise FileNotFoundError("Selected images were not found:\n" + "\n".join(missing))
