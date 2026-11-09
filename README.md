@@ -23,16 +23,15 @@ The authors wrote the code together with Claude Opus 5.5 (Anthropic) and checked
 4. **AI selection.** Give an AI model
    `01_preprocessing/03_photo_selection/photo_selection_prompt.docx` and the
    photographs listed in
-   `01_preprocessing/02_prefilter/results/pool_final.csv`. It screens out
-   photographs with people, text, collages, poor quality or more than one dish, then picks a set spread across framing (how much of the image the main dish fills), 
-   dish categories and brightness, with dishes that are easy to tell apart. Outputs are in
-   `01_preprocessing/03_photo_selection/AI_selection_run/`:
+   `01_preprocessing/02_prefilter/results/pool_final.csv`. It screens out photographs with people, text, collages, poor quality or no clear main dish, then picks a set spread across framing (how much of the image the main dish fills), complexity (how many non-main-dish objects are in view), dish categories and brightness, with dishes that are easy to tell apart; photographs with three or more dishes are kept to a minority. Outputs are in `01_preprocessing/03_photo_selection/AI_selection_run/`:
    `outputs/screening.csv`, `outputs/selected.csv`, `outputs/summary.txt` and
-   the photographs in `selected/<category>/`. Researcher then checked every selected photograph against the inclusion criteria and removed any that failed; 
-   decisions are in `manual_check.csv`. Then `apply_manual_check.py` then copies the kept photographs to `checked/<category>/` and lists them in `checked/checked.csv`.
+   the photographs in `selected/<category>/`.  The researcher then checked every selected photograph against the inclusion criteria. Photographs that failed are marked keep = 0 with a reason; photographs in the wrong category are given the right one in
+   `change_to_folder` (new categories, e.g. `others`, are listed in
+   `NEW_FOLDERS` at the top of the script). Decisions are in `manual_check.csv`.
+   `apply_manual_check.py` then copies the kept photographs to
+   `checked/<category>/` and lists them in `checked/checked.csv`.
 5. **Development set.** `01_preprocessing/04_development_set/pick_dev.py`
-   draws a smaller set from Step 4 that covers a range of ResMem scores and as
-   many dish categories as possible.
+   draws a smaller set of photographs that later is used to edit from `checked/checked.csv` (step 4), which covers the range of ResMem scores, framing and complexity, and as many dish categories as possible. Output: `01_preprocessing/04_development_set/results/development_photos/`.
 
 ## Editing the photographs
 
@@ -40,8 +39,8 @@ The authors wrote the code together with Claude Opus 5.5 (Anthropic) and checked
    `02_editing/method_b/scripts/corpus_percentiles.py` measures all food
    photographs from Step 2 once, to set target levels for brightness,
    saturation and sharpness. `02_editing/method_b/run_method_b.ipynb` then
-   edits each photograph three ways: Sidorov's (2019) nine editing tools; B1,
-   a search over crop, brightness, saturation, contrast and sharpness; and B2,
+   edits each photograph three ways: Sidorov's (2019) nine editing tools; B1 (grid search),
+   a search over crop, brightness, saturation, contrast and sharpness; and B2 (study 1 rule),
    Study 1's direction applied directly. Outputs:
    `02_editing/method_b/results_method_b/candidates.csv`, the saved edits and
    their scores ([codebook](02_editing/method_b/CODEBOOK.md)), and
@@ -56,10 +55,6 @@ The authors wrote the code together with Claude Opus 5.5 (Anthropic) and checked
 3. **Independent check.** Where a method makes several versions of a photograph (Method A and B1), 
    it uses ResMem to pick the best, which inflates those ResMem gains. `scripts/score_vitmem.py` and 
    `scripts/merge_scores.py` in each method folder add ViTMem scores to each `candidates.csv`; compare the methods on ViTMem.
-4. **Stimuli.** Every edited image is checked by hand. Where the method makes several versions of a photograph (e.g. the four runs of each instruction in Method A), 
-   ResMem picks, among those that pass, the version it predicts as most memorable. 
-   On the development set, the method whose gain is large and consistent across both models (ResMem & ViTMem) is chosen.
-   Each original and its edited image are exported as a matched pair for the experiment.
+4. **Stimuli.** On the development set, the method whose gain is large and consistent across both models (ResMem and ViTMem) is chosen. Every edited image is checked by hand: it fails if the dish changes, any food or drink is removed or cropped out, or objects or text are added. Where the method makes several versions of a photograph (e.g. the four runs of each instruction in Method A), ResMem picks, among those that pass, the version it predicts as most memorable. Each original and its edited image are exported as a matched pair for the experiment.
 
-Each method folder has its own README with the details and a
-`scripts/requirements.txt`.
+Each method folder has its own README with more details and a list of required packages to run the script: `scripts/requirements.txt`.

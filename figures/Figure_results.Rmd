@@ -9,12 +9,16 @@ library(dplyr)
 library(ggplot2)
 library(tibble)
 library(grid)
+
 ```
 
 ```{r data}
 # Change this path if the project folder moves.
-project_dir <- "D:/Yelp/Image_Memorability"
+project_dir <- "D:/Yelp/Enhance-image-memorability"
 
+export_dir <- Sys.getenv("FIGURE_OUTPUT_DIR", unset = file.path(project_dir, "figures"))
+
+a_candidates <- read_csv(file.path(project_dir, "02_editing/method_a/results_method_a/candidates.csv"), show_col_types = FALSE)
 a <- read_csv(file.path(project_dir, "02_editing/method_a/results_method_a/final_selection.csv"), show_col_types = FALSE)
 b <- read_csv(file.path(project_dir, "02_editing/method_b/results_method_b/candidates.csv"), show_col_types = FALSE)
 
@@ -30,9 +34,30 @@ sidorov_labels <- c(
   sidorov_grayscaling = "Grayscale"
 )
 
-a_results <- a |>
-  filter(method %in% c("A_guided", "A_study1", "A_empty")) |>
-  mutate(label = method)
+arms <- c("A_guided", "A_study1", "A_empty")
+# Same selection rule as the notebook: max ResMem per photo/arm before review.
+# slice_max(with_ties = FALSE) preserves the first candidate on tied scores.
+a_before <- a_candidates |>
+  filter(method %in% arms) |>
+  group_by(photo, method) |>
+  slice_max(resmem, n = 1, with_ties = FALSE) |>
+  ungroup() |>
+  mutate(check = "Before")
+a_after <- a |>
+  filter(method %in% arms) |>
+  mutate(check = "After")
+a_results <- bind_rows(a_before, a_after) |>
+  mutate(label = paste(method, check, sep = " / "))
+
+# Guard against stale results after the development set changes.
+dev <- read_csv(file.path(project_dir, "01_preprocessing/04_development_set/results/development_photos.csv"),
+                show_col_types = FALSE)
+dev_ids <- tools::file_path_sans_ext(basename(dev$filename))
+stopifnot(setequal(dev_ids, unique(a_candidates$photo)),
+          setequal(dev_ids, unique(b$photo)),
+          all(a$photo %in% dev_ids),
+          !anyDuplicated(a_before[c("photo", "method")]),
+          !anyDuplicated(a_after[c("photo", "method")]))
 b_results <- b |>
   filter((method == "B1" & rank == 1) | method == "B2") |>
   mutate(label = if_else(method == "B1", "B1 search", "B2 Study 1 rule"))
@@ -41,21 +66,24 @@ sidorov_results <- b |>
   mutate(label = unname(sidorov_labels[candidate]))
 
 positions <- tribble(
-  ~label, ~y, ~group,
-  "A_guided", 14, "Method A",
-  "A_study1", 13, "Method A",
-  "A_empty", 12, "Method A",
-  "B1 search", 9.8, "Other",
-  "B2 Study 1 rule", 8.8, "Other",
-  "Vibrance", 6.6, "Other",
-  "Clarity", 5.6, "Other",
-  "Sharpening", 4.6, "Other",
-  "Warmer (5000 K)", 3.6, "Other",
-  "Contrast", 2.6, "Other",
-  "Vignetting", 1.6, "Other",
-  "Background blur", 0.6, "Other",
-  "Background blur + dark", -0.4, "Other",
-  "Grayscale", -1.4, "Other"
+  ~label, ~y, ~group, ~display_label, ~check_label,
+  "A_guided / Before", 17.9, "Method A", "Guided", "Before",
+  "A_study1 / Before", 16.9, "Method A", "Study 1", "Before",
+  "A_empty / Before", 15.9, "Method A", "Empty", "Before",
+  "A_guided / After", 13.7, "Method A", "Guided", "After",
+  "A_study1 / After", 12.7, "Method A", "Study 1", "After",
+  "A_empty / After", 11.7, "Method A", "Empty", "After",
+  "B1 search", 9.1, "Other", "B1 search", "",
+  "B2 Study 1 rule", 8.1, "Other", "B2 Study 1 rule", "",
+  "Vibrance", 5.6, "Other", "Vibrance", "",
+  "Clarity", 4.6, "Other", "Clarity", "",
+  "Sharpening", 3.6, "Other", "Sharpening", "",
+  "Warmer (5000 K)", 2.6, "Other", "Warmer (5000 K)", "",
+  "Contrast", 1.6, "Other", "Contrast", "",
+  "Vignetting", 0.6, "Other", "Vignetting", "",
+  "Background blur", -0.4, "Other", "Background blur", "",
+  "Background blur + dark", -1.4, "Other", "Background blur + dark", "",
+  "Grayscale", -2.4, "Other", "Grayscale", ""
 )
 
 plot_data <- bind_rows(a_results, b_results, sidorov_results) |>
@@ -64,16 +92,23 @@ plot_data <- bind_rows(a_results, b_results, sidorov_results) |>
     n = sum(!is.na(d_vitmem)),
     vitmem = mean(d_vitmem, na.rm = TRUE),
     vitmem_se = sd(d_vitmem, na.rm = TRUE) / sqrt(n),
+    n_resmem = sum(!is.na(d_resmem)),
     resmem = mean(d_resmem, na.rm = TRUE),
+    resmem_se = sd(d_resmem, na.rm = TRUE) / sqrt(n_resmem),
     # Two-sided paired comparison with the original, using per-photo changes.
     p_vitmem = if (sum(!is.na(d_vitmem)) >= 2 &&
                     sd(d_vitmem, na.rm = TRUE) > 0)
       t.test(d_vitmem, mu = 0)$p.value else NA_real_,
+    p_resmem = if (sum(!is.na(d_resmem)) >= 2 &&
+                    sd(d_resmem, na.rm = TRUE) > 0)
+      t.test(d_resmem, mu = 0)$p.value else NA_real_,
     .groups = "drop"
   ) |>
   mutate(
     ci_low = vitmem - qt(0.975, df = n - 1) * vitmem_se,
-    ci_high = vitmem + qt(0.975, df = n - 1) * vitmem_se
+    ci_high = vitmem + qt(0.975, df = n - 1) * vitmem_se,
+    resmem_ci_low = resmem - qt(0.975, df = n_resmem - 1) * resmem_se,
+    resmem_ci_high = resmem + qt(0.975, df = n_resmem - 1) * resmem_se
   ) |>
   left_join(positions, by = "label") |>
   mutate(
@@ -84,27 +119,40 @@ plot_data <- bind_rows(a_results, b_results, sidorov_results) |>
       p_vitmem < 0.05 ~ "*",
       TRUE ~ ""
     ),
-    vitmem_text = sub("^-", "−", sprintf("%+.3f", vitmem))
-  )
+    significance_resmem = case_when(
+      is.na(p_resmem) ~ "",
+      p_resmem < 0.001 ~ "***",
+      p_resmem < 0.01 ~ "**",
+      p_resmem < 0.05 ~ "*",
+      TRUE ~ ""
+    ),
+    row_label = if_else(check_label == "After",
+                        paste0(display_label, " (N = ", n, ")"), display_label),
+    vitmem_text = sub("^-", "\u2212", sprintf("%+.3f", vitmem)),
+    resmem_text = sub("^-", "\u2212", sprintf("%+.3f", resmem))
+  ) |>
+  arrange(desc(y))
+
+stopifnot(nrow(plot_data) == nrow(positions), !anyNA(plot_data$y),
+          all(plot_data$n >= 2), all(plot_data$n_resmem >= 2))
 ```
 
 ```{r appearance}
 # Adjust these values to change the appearance.
-text_size <- 5              # Text drawn inside the plot (ggplot units)
-star_size <- 7              # Significance stars; increase or decrease as needed
-title_size <- 15            # Title, legend and axis title (points)
-axis_text_size <- 15
-circle_size <- 4.5
-diamond_size <- 4
+text_size <- 6.5              # Text drawn inside the plot (ggplot units)
+star_size <- 8              # Significance stars; increase or decrease as needed
+title_size <- 13            # Title, legend and axis title (points)
+axis_text_size <- 13
+circle_size <- 5.5
+diamond_size <- 5
 diamond_stroke <- 0.9
 ci_line_width <- 0.8
-legend_icon_size <- 4       # Legend diamond size
-legend_circle_size <- 4.5   # ViTMem legend circle size
+legend_icon_size <- 5       # Legend diamond size
+legend_circle_size <- 5.5   # ViTMem legend circle size
 legend_line_width <- 0.8
 legend_key_width <- 0.9     # Centimetres; controls the available line length
-diamond_key_position <- 0.85 # Move the diamond toward its label (0 to 1)
-method_a_colour <- "#287BD7"
-other_colour <- "#BDBDB4"
+vitmem_colour <- "#287BD7"
+model_y_offset <- 0.16      # Separate the two models' intervals within each row
 diamond_colour <- "#505050"
 ```
 
@@ -115,88 +163,155 @@ draw_key_vitmem <- function(data, params, size) {
     segmentsGrob(
       x0 = unit(0.08, "npc"), x1 = unit(0.92, "npc"),
       y0 = unit(0.5, "npc"), y1 = unit(0.5, "npc"),
-      gp = gpar(col = other_colour, lwd = legend_line_width * .pt)
+      gp = gpar(col = vitmem_colour, lwd = legend_line_width * .pt)
     ),
     pointsGrob(
       x = unit(0.5, "npc"), y = unit(0.5, "npc"), pch = 16,
       size = unit(legend_circle_size, "mm"),
-      gp = gpar(col = other_colour)
+      gp = gpar(col = vitmem_colour)
     )
   )
 }
-# Keep the diamond close to its label without shortening the interval key.
+# Match the plotted ResMem interval and central hollow diamond.
 draw_key_resmem <- function(data, params, size) {
-  pointsGrob(
-    x = unit(diamond_key_position, "npc"), y = unit(0.5, "npc"), pch = 23,
-    size = unit(legend_icon_size, "mm"),
-    gp = gpar(col = diamond_colour, fill = "white", lwd = diamond_stroke)
+  grobTree(
+    segmentsGrob(
+      x0 = unit(0.08, "npc"), x1 = unit(0.92, "npc"),
+      y0 = unit(0.5, "npc"), y1 = unit(0.5, "npc"),
+      gp = gpar(col = diamond_colour, lwd = legend_line_width * .pt)
+    ),
+    pointsGrob(
+      x = unit(0.5, "npc"), y = unit(0.5, "npc"), pch = 23,
+      size = unit(legend_icon_size, "mm"),
+      gp = gpar(col = diamond_colour, fill = "white", lwd = diamond_stroke)
+    )
   )
 }
 ```
 
-```{r plot, fig.width=14, fig.height=9, dpi=220}
-p <- ggplot(plot_data, aes(y = y)) +
-  geom_vline(xintercept = c(-0.05, 0.05, 0.10),
-             colour = "#E7E7E3", linewidth = 0.4) +
-  geom_vline(xintercept = 0, colour = "#C8C8C1", linewidth = 0.5) +
-  # Draw diamonds first, behind circles and intervals.
-  geom_point(aes(x = resmem, shape = "ResMem change"),
+```{r plot, fig.width=16, fig.height=12, dpi=450}
+# Independent panels give the labels and estimates a fixed boundary.
+# Adjust these relative widths to change spacing without moving the data.
+panel_widths <- c(labels = 3.4, estimates = 8.4, values = 3.8)
+plot_x_limits <- c(-0.08, 0.135)
+y_limits <- c(-4.1, 20.8)
+header_y <- 20.1
+
+# The full confidence intervals must fit inside the estimates panel.
+stopifnot(min(plot_data$ci_low, plot_data$resmem_ci_low) > plot_x_limits[1],
+          max(plot_data$ci_high, plot_data$resmem_ci_high) < plot_x_limits[2])
+
+panel_theme <- theme_void(base_size = title_size) +
+  theme(plot.margin = margin(15, 0, 0, 0))
+
+p_labels <- ggplot(plot_data, aes(y = y)) +
+  geom_text(aes(x = if_else(group == "Method A", 0.22, 0.10),
+                label = row_label), hjust = 0, size = text_size) +
+  annotate("text", x = 0.02, y = header_y, label = "METHOD A",
+           hjust = 0, fontface = "bold", colour = "#555555", size = text_size) +
+  annotate("text", x = 0.02, y = 10.1, label = "METHOD B",
+           hjust = 0, fontface = "bold", colour = "#555555", size = text_size) +
+  annotate("text", x = 0.02, y = 6.6, label = "SIDOROV (2019)",
+           hjust = 0, fontface = "bold", colour = "#555555", size = text_size) +
+  annotate("text", x = 0.10, y = 18.95, label = "Before",
+           hjust = 0, fontface = "bold", colour = "#555555", size = text_size) +
+  annotate("text", x = 0.10, y = 14.75, label = "After",
+           hjust = 0, fontface = "bold", colour = "#555555", size = text_size) +
+  scale_x_continuous(limits = c(0, 1), expand = c(0, 0), breaks = NULL) +
+  scale_y_continuous(limits = y_limits, expand = c(0, 0), breaks = NULL) +
+  labs(x = NULL, y = NULL) + panel_theme +
+  theme(plot.margin = margin(15, 0, 0, 20))
+
+reference_lines <- tibble(x = c(-0.05, 0, 0.05, 0.10))
+axis_ticks <- tibble(x = c(-0.05, 0, 0.05, 0.10),
+                     text = c("\u22120.05", "0", "+0.05", "+0.10"))
+p_estimates <- ggplot(plot_data, aes(y = y)) +
+  geom_segment(data = reference_lines,
+               aes(x = x, xend = x, y = -3.15, yend = 20.55),
+               inherit.aes = FALSE, colour = "#E7E7E3", linewidth = 0.4) +
+  annotate("segment", x = 0, xend = 0, y = -3.15, yend = 20.55,
+           colour = "#C8C8C1", linewidth = 0.5) +
+  geom_segment(aes(x = resmem_ci_low, xend = resmem_ci_high,
+                   y = y - model_y_offset, yend = y - model_y_offset),
+               colour = diamond_colour, linewidth = ci_line_width,
+               show.legend = FALSE) +
+  geom_point(aes(x = resmem, y = y - model_y_offset, shape = "ResMem change"),
              size = diamond_size, stroke = diamond_stroke,
              colour = diamond_colour, fill = "white",
              key_glyph = draw_key_resmem) +
-  geom_segment(aes(x = ci_low, xend = ci_high, yend = y, colour = group),
-               linewidth = ci_line_width, show.legend = FALSE) +
-  geom_point(aes(x = vitmem, colour = group, shape = "ViTMem change"),
-             size = circle_size, key_glyph = draw_key_vitmem) +
-  geom_text(aes(x = -0.17, label = label), hjust = 0, size = text_size) +
-  geom_text(aes(x = 0.135, label = vitmem_text), hjust = 1, size = text_size) +
-  geom_text(aes(x = 0.137, y = y - 0.12, label = significance),
-            hjust = 0, size = star_size) +
-  annotate("text", x = -0.175, y = 14.9, label = "METHOD A",
-           hjust = 0, fontface = "bold", colour = "#555555", size = text_size) +
-  annotate("text", x = -0.175, y = 10.7, label = "METHOD B",
-           hjust = 0, fontface = "bold", colour = "#555555", size = text_size) +
-  annotate("text", x = -0.175, y = 7.5, label = "SIDOROV (2019)",
-           hjust = 0, fontface = "bold", colour = "#555555", size = text_size) +
-  annotate("text", x = 0.135, y = 14.9, label = "ViTMem",
-           hjust = 1, fontface = "bold", colour = "#555555", size = text_size) +
-  scale_colour_manual(values = c("Method A" = method_a_colour, "Other" = other_colour),
-                      guide = "none") +
+  geom_segment(aes(x = ci_low, xend = ci_high,
+                   y = y + model_y_offset, yend = y + model_y_offset),
+               colour = vitmem_colour, linewidth = ci_line_width,
+               show.legend = FALSE) +
+  geom_point(aes(x = vitmem, y = y + model_y_offset, shape = "ViTMem change"),
+             colour = vitmem_colour, size = circle_size, key_glyph = draw_key_vitmem) +
+  geom_text(data = axis_ticks, aes(x = x, y = -3.65, label = text),
+            inherit.aes = FALSE, size = text_size, colour = "#555555") +
   scale_shape_manual(
     name = NULL,
     breaks = c("ViTMem change", "ResMem change"),
     values = c("ViTMem change" = 16, "ResMem change" = 23),
-    labels = c("ViTMem change with 95% CI (compares the methods)",
-               "ResMem change (the model that chose the edits)"),
+    labels = c("ViTMem change with 95% CI", "ResMem change with 95% CI"),
     guide = guide_legend(nrow = 1, override.aes = list(
-      colour = c(other_colour, diamond_colour), fill = c(other_colour, "white"),
+      colour = c(vitmem_colour, diamond_colour), fill = c(vitmem_colour, "white"),
       size = c(legend_icon_size, legend_icon_size), stroke = c(0.5, diamond_stroke)
     ))
   ) +
-  scale_x_continuous(breaks = c(-0.05, 0, 0.05, 0.10),
-                     labels = c("−0.05", "0", "+0.05", "+0.10"),
-                     limits = c(-0.18, 0.15)) +
-  scale_y_continuous(limits = c(-2.5, 15.5), breaks = NULL) +
-  labs(x = NULL,
-       y = NULL) +
-  coord_cartesian(clip = "off") +
-  theme_void(base_size = title_size) +
+  scale_x_continuous(limits = plot_x_limits, expand = c(0, 0), breaks = NULL) +
+  scale_y_continuous(limits = y_limits, expand = c(0, 0), breaks = NULL) +
+  labs(x = NULL, y = NULL) + panel_theme +
   theme(
-    plot.title = element_text(size = title_size, face = "bold", hjust = 0, margin = margin(b = 15)),
-    legend.position = "top", legend.justification = "left",
-    legend.text = element_text(size = title_size),
+    legend.position = "bottom", legend.justification = "center",
+    legend.box.just = "center", legend.margin = margin(t = 10, b = 15),
+    legend.text = element_text(size = 18),
     legend.key.width = unit(legend_key_width, "cm"),
-    legend.spacing.x = unit(0.5, "cm"),
-    axis.text.x = element_text(size = axis_text_size, colour = "#555555", margin = margin(t = 10)),
-    axis.title.x = element_text(size = title_size, colour = "#555555", margin = margin(t = 15)),
-    plot.caption = element_text(size = title_size * 0.8, colour = "#555555", hjust = 0),
-    plot.margin = margin(15, 20, 15, 20)
+    legend.spacing.x = unit(0.5, "cm")
   )
+
+# Both models use the same two-sided paired t-test vs. original, unadjusted.
+# Stars: * p < .05, ** p < .01, *** p < .001.
+value_vitmem_x <- 0.30
+value_resmem_x <- 0.82
+value_star_gap <- 0.035
+p_values <- ggplot(plot_data, aes(y = y)) +
+  geom_text(aes(x = value_vitmem_x, label = vitmem_text),
+            hjust = 1, size = text_size) +
+  geom_text(aes(x = value_vitmem_x + value_star_gap,
+                y = y - 0.12, label = significance),
+            hjust = 0, size = star_size) +
+  geom_text(aes(x = value_resmem_x, label = resmem_text),
+            hjust = 1, size = text_size) +
+  geom_text(aes(x = value_resmem_x + value_star_gap,
+                y = y - 0.12, label = significance_resmem),
+            hjust = 0, size = star_size) +
+  annotate("text", x = value_vitmem_x, y = header_y, label = "ViTMem",
+           hjust = 1, fontface = "bold", colour = "#555555", size = text_size) +
+  annotate("text", x = value_resmem_x, y = header_y, label = "ResMem",
+           hjust = 1, fontface = "bold", colour = "#555555", size = text_size) +
+  scale_x_continuous(limits = c(0, 1), expand = c(0, 0), breaks = NULL) +
+  scale_y_continuous(limits = y_limits, expand = c(0, 0), breaks = NULL) +
+  labs(x = NULL, y = NULL) + panel_theme +
+  theme(plot.margin = margin(15, 24, 0, 0))
+
+legend <- cowplot::get_legend(p_estimates)
+body <- cowplot::plot_grid(
+  p_labels, p_estimates + theme(legend.position = "none"), p_values,
+  nrow = 1, align = "h", axis = "tb", rel_widths = panel_widths
+)
+p <- cowplot::plot_grid(body, legend, ncol = 1, rel_heights = c(1, 0.065))
 p
 ```
 
-```{r save, eval=FALSE}
-# Run this chunk to export the plot after adjusting it.
-ggsave(file.path(project_dir, "figures", "Figure_results_R.png"), p,
-       width = 12, height = 8, dpi = 220, bg = "white")
+```{r save}
+# Knit this file, or run all chunks including this one, to refresh the exports.
+dir.create(export_dir, recursive = TRUE, showWarnings = FALSE)
+ggsave(file.path(export_dir, "Figure_results_R.png"), p,
+       width = 16, height = 12, dpi = 450, bg = "white")
+ggsave(file.path(export_dir, "Figure_results_R.svg"), p,
+       device = svglite::svglite, width = 16, height = 12, bg = "white")
+dir.create(file.path(export_dir, "data"), showWarnings = FALSE)
+write_csv(plot_data |> select(label, check_label, n, vitmem, ci_low, ci_high,
+                              resmem, n_resmem, resmem_ci_low, resmem_ci_high, p_vitmem, significance,
+                              p_resmem, significance_resmem),
+          file.path(export_dir, "data", "Figure_results_summary.csv"))
 ```

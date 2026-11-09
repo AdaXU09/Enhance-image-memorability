@@ -1,21 +1,21 @@
-filename,category,memory_score,mem_third,framing,main_dish_bbox_pct,note
-k7vCDHTidOkQVhfeG2Vg3w.jpg,grill,0.621,low,Q1,25,Several plates of steak burger fries and vegetables.
-zVO2LqjNTAtjegwe4KQs0A.jpg,dessert,0.761,low,Q3,90,Cake and ice cream on a patterned plate.
-ZhzH274b8ZMj1Fe9VBcDZQ.jpg,noodle,0.676,low,Q4,100,Lasagne with melted cheese and tomato sauce.
-lze8CIs1km5nzheeBL1Wnw.jpg,burger,0.742,low,Q2,70,Three pretzel sandwiches on a black cooling rack.
-yaxtopYhcsgrb2kyj4op_Q.jpg,rice,0.709,low,Q3,90,Rice and roasted meat on a metal platter.
-f7xG76_Iy1OuQ68yzE22Zw.jpg,other,0.666,low,Q1,30,An omelette and breakfast dishes beside drinks.
-roVO_7BmWv2yz02brlKlyw.jpg,soup,0.755,low,Q2,80,Spicy tofu stew in a white bowl.
-SWxBzKr90IFAfl3LVLPS9w.jpg,salad,0.774,mid,Q2,80,Strawberry and cheese salad in a bowl beside a cheese board.
--DT4Kw60i2NjwhjWcZW3Ww.jpg,pizza,0.8,mid,Q3,90,A cut calzone with creamy filling on a metal pan.
-8YWhq-JGsxOF5c8HkyRl4Q.jpg,drink,0.793,mid,Q1,5,Two smoothies surrounded by fruit and vegetables.
-fpiC6XeIk_wtVLVd3f12Jg.jpg,fried,0.774,mid,Q3,90,Breaded cutlets with melted cheese and tomato sauce beside salad.
-Pz3yEa8lCxoB382G0-apKA.jpg,soup,0.763,mid,Q4,100,Hot and sour soup in a white bowl.
-ebLYZ5PGmBhg6coKuLDPog.jpg,burger,0.784,mid,Q4,100,Burger and loaded fries in a lined basket.
-AEnxVjarEcIdbtNtlldSMA.jpg,other,0.809,mid,Q2,70,Baked oysters and toast with other dishes and drinks behind.
-1P4J68Ao1BgqrIaID-B_eg.jpg,fried,0.842,high,Q1,50,Cheese fries on a white plate beside ketchup and a partial side bowl.
-iElxpbScjjxtKsuefI7n2Q.jpg,noodle,0.952,high,Q4,100,Creamy pasta with bacon on a white plate beside water.
-wwq5OR75ZzjWOzBqXLhjcQ.jpg,dessert,0.809,high,Q2,80,Ice cream over a baked dessert on a white plate.
-WS-AFJO4AWmBUI4Cq9ui8Q.jpg,pizza,0.872,high,Q4,100,Large pizza with herbs on a wooden board.
-KBuEAp0bzcETW6RhI0fcNg.jpg,drink,0.931,high,Q1,30,Green milkshake topped with sweets in a clear cup.
-Z55KcOUL-EkgcfMOz_O2Mw.jpg,grill,0.828,high,Q3,80,Sauced meat cauliflower and mash on a square plate.
+filename,category,memory_score,mem_third,framing,main_dish_bbox_pct,complexity,n_dishes,note
+hastuv_zXw3CRV44HYfoJA.jpg,rice,0.591,low,Q3,70,medium,1,A rice bowl contains dark glazed fish cabbage carrots and greens.
+JQtFVermbRWkDYNXsJVGhA.jpg,burger,0.721,low,Q2,65,simple,2,A tall double bacon cheeseburger has lettuce and tomato.
+gRveaU7lT-d8gls7zP6Y3Q.jpg,grill,0.646,low,Q1,35,complex,3plus,Roast poultry slices with gravy are served with green beans and cranberry sauce.
+QpzgQi79OKNB9zQXRPuP5w.jpg,salad,0.683,low,Q4,90,complex,3plus,Lettuce cups hold minced filling beside green vegetables cucumber and pale chips.
+j6NzdCWJOWpL9aVRU1LyUA.jpg,fried,0.701,low,Q2,50,medium,3plus,Nachos are topped with ground meat diced tomato cheese and sour cream.
+YEsPOcFAWPGtCKbUvSsHMA.jpg,noodle,0.69,low,Q4,100,simple,1,A round portion of lasagna has browned cheese and tomato sauce.
+f7xG76_Iy1OuQ68yzE22Zw.jpg,other,0.666,low,Q1,25,complex,3plus,A round golden omelet sits beyond a water glass and cup of tea.
+OOWgYWNn5upAHbDHWKSyCw.jpg,pizza,0.796,mid,Q3,65,simple,1,A small oval pizza has herbs red onion and zigzag white sauce.
+FzdbrnTID0spvbDQUarO9w.jpg,dessert,0.747,mid,Q2,60,medium,2,A stack of pancakes accompanies breaded fried chicken.
+2Q7GC3XGDZLqs2giZK3ukA.jpg,soup,0.772,mid,Q4,90,medium,3plus,A red seafood soup contains shrimp fish and chopped green onion.
+ubYZHfj8piBnO92Cd5lgig.jpg,noodle,0.726,mid,Q3,80,simple,1,Ramen in dark broth has pork egg halves and seaweed.
+U9tmSzPMSJFNH6p9RCPcYA.jpg,other,0.804,mid,Q1,40,complex,3plus,A seafood stew contains mussels and large red shellfish.
+474Icdf-IkpX8131Ra0x-A.jpg,grill,0.761,mid,Q3,80,complex,2,Grilled chicken fillets accompany rice broccoli and a charred lemon.
+GbnseqqexlHCFYtra-4bKA.jpg,salad,0.736,mid,Q2,65,simple,1,A salad has sliced eggs cucumber tomato red onion and yellow vegetables.
+KBuEAp0bzcETW6RhI0fcNg.jpg,drink,0.931,high,Q1,35,simple,1,A mint green milkshake is crowned with cream sprinkles and cookies.
+j4a5-Hlj3H6JiIaRlXc3yQ.jpg,dessert,0.805,high,Q4,100,medium,1,Creme brulee is topped with blackberries strawberry and mint.
+iiB5a_883CdFWv3q2j9EgQ.jpg,burger,0.863,high,Q4,90,complex,2,Three fish sliders accompany fries and a small sauce cup.
+aofLqa8kNqApRR5MVl2UkQ.jpg,rice,0.835,high,Q2,55,medium,1,A divided bento box contains white rice fish salad and small sides.
+jg_N-K5hX45Bbw2l2Miuig.jpg,pizza,0.89,high,Q1,30,simple,1,A cone of pizza dough contains tomato cheese and round meatballs.
+1P4J68Ao1BgqrIaID-B_eg.jpg,fried,0.842,high,Q3,65,complex,2,Crinkle-cut fries are covered with yellow cheese sauce.

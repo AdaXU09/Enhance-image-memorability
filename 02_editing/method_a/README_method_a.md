@@ -1,15 +1,15 @@
 # Method A: written editing instructions, applied by FLUX.1 Kontext
 
 For each food photograph, we used an LLM (Claude, Anthropic) to write short
-instructions on how to make it more memorable. FLUX.1 Kontext, an AI image
-editor, then applied them.
+instructions on how to make it more memorable, then checked and refined by the researcher.
+FLUX.1 Kontext, an AI image editor, then applied them.
 
 ## Three versions
 
 | name | instruction given to FLUX |
 |---|---|
 | **A_guided** | the photograph's corresponding instructions, plus a fixed sentence: keep the dish, ingredients, portion and arrangement the same; add no objects, garnish or text |
-| **A_study1** | one fixed instruction for every photograph, built from Study 1: the features that can be edited without changing the dish and whose effect is at least 0.01 per SD in the restaurant sample (fewer objects, brighter). "Remove the non-food objects around the dish, such as cutlery, napkins, phones, bags and packaging, so that fewer objects are in the photograph, and make the whole photograph brighter. Keep the same framing and camera angle.", followed by the same fixed sentence |
+| **A_study1** | one fixed instruction for every photograph, built from Study 1: the features that can be edited without changing the dish and whose effect is at least 0.01 per SD in the restaurant sample (fewer objects, brighter). "Remove only the non-food objects around the dish, such as cutlery, napkins, napkin holders, empty plates, pens, phones and empty wrappers, and make the whole photograph brighter. Every drink, sauce and seasoning, with its glass, cup or bottle, counts as food: keep them all, and keep every dish and side. Keep the cloths or placemats under the plates, and the same framing, camera angle, table and background.", followed by the same fixed sentence |
 | **A_empty** | a blank instruction: shows what FLUX changes on its own. It serves as a baseline. |
 
 Each version is run four times per photograph, with seeds 0–3.

@@ -34,9 +34,13 @@ KEEP = ("Keep the food itself exactly the same: the same dish, the same "
 # A_study1: the Study 1 features that can be edited without changing the dish and whose
 # effect is at least 0.01 per SD in the restaurant sample (Table 2): total objects (fewer)
 # and brightness (HSV value). 
-STUDY1 = ("Remove the non-food objects around the dish, such as cutlery, napkins, phones, "
-          "bags and packaging, so that fewer objects are in the photograph, and make the "
-          "whole photograph brighter. Keep the same framing and camera angle.")
+STUDY1 = ("Remove only the non-food objects around the dish, such as cutlery, "
+          "napkins, napkin holders, empty plates, pens, phones and empty "
+          "wrappers, and make the whole photograph brighter. Every drink, sauce "
+          "and seasoning, with its glass, cup or bottle, counts as food: keep "
+          "them all, and keep every dish and side. Keep the cloths or placemats "
+          "under the plates, and the same framing, camera angle, table and "
+          "background.")
 
 ARMS = ("A_guided", "A_study1", "A_empty")
 
