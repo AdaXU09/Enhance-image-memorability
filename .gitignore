@@ -1,3 +1,4 @@
 __pycache__/
 *.py[cod]
 .Rhistory
+/01_preprocessing/03_photo_selection/AI_selection_run/scripts/
